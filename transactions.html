@@ -179,32 +179,29 @@
                         </div>
                     </div>
                     <div class="nl-filter-place">
-                        <div class="btn-group">
-                            <button class="btn btn-white" type="button">Показать все точки питания</button>
-                            <button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button"><span class="caret"></span></button>
-                            <ul role="menu" class="dropdown-menu">
-                                <li><a href="#">"Pizza Ollis", Кронверкский пр. д. 61/28</a></li>
-                                <li><a href="#">"Pizza Ollis", Кронверкский пр. д. 61/28</a></li>
-                                <li><a href="#">"Pizza Ollis", Кронверкский пр. д. 61/28</a></li>
-                                
-                            </ul>
-                        </div><!-- /btn-group -->
-                        <div class="btn-group">
-                            <button class="btn btn-white" type="button">Показать все транзакции</button>
-                            <button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button"><span class="caret"></span></button>
-                            <ul role="menu" class="dropdown-menu">
-                                <li><a href="#">Только успешные</a></li>
-                                <li><a href="#">Только ошибочные</a></li>                                        
-                            </ul>
-                        </div><!-- /btn-group -->
+                        <div class="nl-select-group">
+                            <select id="e1" class="nl-select nl-select-basic">
+                                <option >Показать все заведения</option>
+                                <option value="">"Pizza Ollis", Кронверкский пр. д. 61/28&nbsp;</option>
+                                <option value="">"Mama Roma", Чкаловский, 15&nbsp;</option>
+                                <option value="">Бар "Dacha", Рубинштейна,27&nbsp;</option>
+                            </select>
+                        </div>
+                        <div class="nl-select-group">
+                            <select class="nl-select nl-select-basic">
+                                <option >Показать все транзакции</option>
+                                <option value="">Только успешные</option>
+                                <option value="">Только ошибочные</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
-
                 <div class="row">&nbsp;</div>
-
                 <div class="row">
                     <div class="col-xs-12">
                         <button type="button" class="btn btn-warning">Фильтровать</button>
+                        <a href="" class="nl-btn-drop text-muted">Сбросить</a>
+
                     </div>
                 </div>
             </div>
