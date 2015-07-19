@@ -6222,6 +6222,9 @@ table.nl-user-table--points td { line-height: 20px!important; }
     border: 0;
     color: #555555;
 }
+.btn-pale:hover {
+    background-color: #eee;
+}
 .text-underline { border-bottom: 1px solid; }
 .nl-user-btn-fill { color: #767676; border-color: #767676; }
 
