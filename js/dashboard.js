@@ -414,7 +414,7 @@
                     if (chatText == "") {
                         alert('Empty Field');
                     } else {
-                        $('<li class="clearfix"><div class="chat-avatar"><img src="images/chat-user-thumb.png" alt="male"><i>' + chatTime + '</i></div><div class="conversation-text"><div class="ctext-wrap"><i>John Carry</i><p>' + chatText + '</p></div></div></li>').appendTo('.conversation-list');
+                        $('<li class="clearfix"><div class="chat-avatar"><img src="images/chat-user-thumb.png" alt="male"><i>' + chatTime + '</i></div><div class="conversation-text"><div class="ctext-wrap"><i>Логин ресторана</i><p>' + chatText + '</p></div></div></li>').appendTo('.conversation-list');
                     }
                     $(this).val('');
                     $('.conversation-list').scrollTo('100%', '100%', {
@@ -434,7 +434,7 @@
                     alert('Empty Field');
                     $(".chat-input").focus();
                 } else {
-                    $('<li class="clearfix"><div class="chat-avatar"><img src="images/chat-user-thumb.png" alt="male"><i>' + chatTime + '</i></div><div class="conversation-text"><div class="ctext-wrap"><i>John Carry</i><p>' + chatText + '</p></div></div></li>').appendTo('.conversation-list');
+                    $('<li class="clearfix"><div class="chat-avatar"><img src="images/chat-user-thumb.png" alt="male"><i>' + chatTime + '</i></div><div class="conversation-text"><div class="ctext-wrap"><i>Логин ресторана</i><p>' + chatText + '</p></div></div></li>').appendTo('.conversation-list');
                     $('.chat-input').val('');
                     $(".chat-input").focus();
                     $('.conversation-list').scrollTo('100%', '100%', {
