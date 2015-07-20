@@ -1219,7 +1219,7 @@ DataTable.defaults = {
 	/**
 	 * Define the starting point for data display when using DataTables with
 	 * pagination. Note that this parameter is the number of records, rather than
-	 * the page number, so if you have 10 records per page and want to start on
+	 * the page number, so if you have 10 на странице and want to start on
 	 * the third page, it should be "20".
 	 *  @type int
 	 *  @default 0
@@ -1452,7 +1452,7 @@ DataTable.defaults = {
 		 * variables are all dynamically replaced as the table display updates, and 
 		 * can be freely moved or removed as the language requirements change.
 		 *  @type string
-		 *  @default Showing _START_ to _END_ of _TOTAL_ entries
+		 *  @default Показано _START_ по _END_ из _TOTAL_
 		 *  @dtopt Language
 		 * 
 		 *  @example
@@ -1464,14 +1464,14 @@ DataTable.defaults = {
 		 *      } );
 		 *    } );
 		 */
-		"sInfo": "Showing _START_ to _END_ of _TOTAL_ entries",
+		"sInfo": "Показано _START_ по _END_ из _TOTAL_",
 	
 	
 		/**
 		 * Display information string for when the table is empty. Typically the 
 		 * format of this string should match sInfo.
 		 *  @type string
-		 *  @default Showing 0 to 0 of 0 entries
+		 *  @default Показано 0 по 0 из 0
 		 *  @dtopt Language
 		 * 
 		 *  @example
@@ -1483,7 +1483,7 @@ DataTable.defaults = {
 		 *      } );
 		 *    } );
 		 */
-		"sInfoEmpty": "Showing 0 to 0 of 0 entries",
+		"sInfoEmpty": "Показано 0 по 0 из 0",
 	
 	
 		/**
@@ -1491,7 +1491,7 @@ DataTable.defaults = {
 		 * to the information (sInfo) to give an idea of how strong the filtering 
 		 * is. The variable _MAX_ is dynamically updated.
 		 *  @type string
-		 *  @default (filtered from _MAX_ total entries)
+		 *  @default (из _MAX_ )
 		 *  @dtopt Language
 		 * 
 		 *  @example
@@ -1503,7 +1503,7 @@ DataTable.defaults = {
 		 *      } );
 		 *    } );
 		 */
-		"sInfoFiltered": "(filtered from _MAX_ total entries)",
+		"sInfoFiltered": "(из _MAX_ )",
 	
 	
 		/**
@@ -1689,7 +1689,7 @@ DataTable.defaults = {
 		 * displayed after filtering. sEmptyTable is shown when there is simply no
 		 * information in the table at all (regardless of filtering).
 		 *  @type string
-		 *  @default No matching records found
+		 *  @default Ничего похожего не найдено :(
 		 *  @dtopt Language
 		 * 
 		 *  @example
@@ -1701,7 +1701,7 @@ DataTable.defaults = {
 		 *      } );
 		 *    } );
 		 */
-		"sZeroRecords": "No matching records found"
+		"sZeroRecords": "Ничего похожего не найдено :("
 	},
 
 

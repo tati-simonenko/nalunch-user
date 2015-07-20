@@ -36,7 +36,7 @@
 
 
         var barChartData = {
-            labels : ["January","February","March","April","May","June","July"],
+            labels : ["Январь","Февраль","Март","Апрель","Май","Июнь","Июль"],
             datasets : [
                 {
                     fillColor : "#E67A77",
@@ -56,7 +56,7 @@
 
 
         var Linedata = {
-            labels : ["January","February","March","April","May","June","July"],
+            labels : ["Январь","Февраль","Март","Апрель","Май","Июнь","Июль"],
             datasets : [
                 {
                     fillColor : "#E67A77",
