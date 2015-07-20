@@ -91,7 +91,7 @@ var EditableTable = function () {
             $('#editable-sample a.delete').live('click', function (e) {
                 e.preventDefault();
 
-                if (confirm("Are you sure to delete this row ?") == false) {
+                if (confirm("Вы уверены, что хотите удалить? ?") == false) {
                     return;
                 }
 
