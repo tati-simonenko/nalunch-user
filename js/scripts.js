@@ -344,7 +344,7 @@ $( document ).ready(function() {
     // });
 
     var body   = $('.nl-total-body'),
-      delbox_str = "<p class='nl-deleted'>Удалено. <a href='#' class='nl-cancel'>Но я передумал!</a></p>";
+      delbox_str = "<p class='nl-deleted'>Удалено. <a href='#' class='nl-cancel'>И я тотчас передумал!</a></p>";
     
   body.click(function(){
     event.preventDefault();

@@ -6,29 +6,24 @@
 
 /* font-family: "VisbyCF-ExtraBold"; */
 @font-face {
-    font-family: "VisbyCF-ExtraBold";
-    src: url("../fonts/Visbi/VisbyCF-ExtraBold-webfont.eot?");
-    src: url("../fonts/Visbi/VisbyCF-ExtraBold-webfont.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/Visbi/VisbyCF-ExtraBold-webfont.woff") format("woff"),
-    url('../fonts/Visbi/VisbyCF-ExtraBold-webfont.svg#webfont') format('svg'),
-    url('../fonts/Visbi/VisbyCF-ExtraBold.otf'),
-    url("../fonts/Visbi/VisbyCF-ExtraBold-webfont.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
+  font-family: 'VisbyCF-ExtraBold';
+  src: 
+  url('../fonts/Visbi/VisbyCF-ExtraBold.eot?#iefix') format('embedded-opentype'),  
+  url('../fonts/Visbi/VisbyCF-ExtraBold.otf')  format('opentype'),
+  url('../fonts/Visbi/VisbyCF-ExtraBold.woff') format('woff'), 
+  url('../fonts/Visbi/VisbyCF-ExtraBold.ttf')  format('truetype'), 
+  url('../fonts/Visbi/VisbyCF-ExtraBold.svg#VisbyCF-ExtraBold') format('svg');
 }
 
 @font-face {
-    font-family: "VisbyCF-Bold";
-    src: url("../fonts/Visbi/VisbyCF-Bold-webfont.eot?");
-    src: url("../fonts/Visbi/VisbyCF-Bold-webfont.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/Visbi/VisbyCF-Bold-webfont.woff") format("woff"),
-    url('../fonts/Visbi/VisbyCF-Bold-webfont.svg#webfont') format('svg'),
-    url('../fonts/Visbi/VisbyCF-Bold.otf'),
-    url("../fonts/Visbi/VisbyCF-Bold-webfont.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
+  font-family: 'VisbyCF-Bold';
+  src: 
+  url('../fonts/Visbi/VisbyCF-Bold.eot?#iefix') format('embedded-opentype'),  
+  url('../fonts/Visbi/VisbyCF-Bold.otf')  format('opentype'),
+  url('../fonts/Visbi/VisbyCF-Bold.woff') format('woff'), 
+  url('../fonts/Visbi/VisbyCF-Bold.ttf')  format('truetype'), 
+  url('../fonts/Visbi/VisbyCF-Bold.svg#VisbyCF-Bold') format('svg');
 }
-
 
 html {
     text-rendering: optimizeLegibility !important;
@@ -372,7 +367,7 @@ ul.sidebar-menu li a.active i {
     position:relative;
 }
 h1.logo--head {
-    font-family: "VisbyCF-ExtraBold";
+    font-family: "VisbyCF-ExtraBold", Arial, sans-serif;
     color: #fff;
     font-size: 23px;
     font-weight: bold;
@@ -382,7 +377,7 @@ h1.logo--head {
     text-transform: none;
 }
 h2.logo--subhead {
-    font-family: "VisbyCF-Bold";
+    font-family: "VisbyCF-Bold", Arial, sans-serif;
     color: #95b75d;
     font-size: 13px;
     font-weight: bold;
@@ -6184,6 +6179,7 @@ p.nl-places-select__title { margin-bottom: 10px; }
     background-color: #fafafa;
     border: 1px solid #ddd;
     margin-right: 0;
+    padding: 15px 0;
 }
 .nl-total-heading {
     background-color: #fafafa;
@@ -6215,6 +6211,9 @@ p.nl-places-select__title { margin-bottom: 10px; }
 }
 .nl-deleted {
     padding: 12px 0;
+}
+.nl-cancel {
+    text-decoration: underline;
 }
 .nl-total-body {
     background-color: #fff;
