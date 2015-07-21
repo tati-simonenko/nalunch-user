@@ -4,6 +4,32 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic);
 @import url(bucket-ico-fonts.css);
 
+/* font-family: "VisbyCF-ExtraBold"; */
+@font-face {
+    font-family: "VisbyCF-ExtraBold";
+    src: url("../fonts/Visbi/VisbyCF-ExtraBold-webfont.eot?");
+    src: url("../fonts/Visbi/VisbyCF-ExtraBold-webfont.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Visbi/VisbyCF-ExtraBold-webfont.woff") format("woff"),
+    url('../fonts/Visbi/VisbyCF-ExtraBold-webfont.svg#webfont') format('svg'),
+    url('../fonts/Visbi/VisbyCF-ExtraBold.otf'),
+    url("../fonts/Visbi/VisbyCF-ExtraBold-webfont.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "VisbyCF-Bold";
+    src: url("../fonts/Visbi/VisbyCF-Bold-webfont.eot?");
+    src: url("../fonts/Visbi/VisbyCF-Bold-webfont.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Visbi/VisbyCF-Bold-webfont.woff") format("woff"),
+    url('../fonts/Visbi/VisbyCF-Bold-webfont.svg#webfont') format('svg'),
+    url('../fonts/Visbi/VisbyCF-Bold.otf'),
+    url("../fonts/Visbi/VisbyCF-Bold-webfont.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
 html {
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
@@ -339,11 +365,30 @@ ul.sidebar-menu li a.active i {
 
 }
 .brand {
-    background:#F99A00;
+    background:#32323a;
     float:left;
     width:240px;
     height:80px;
     position:relative;
+}
+h1.logo--head {
+    font-family: "VisbyCF-ExtraBold";
+    color: #fff;
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 27px;
+    margin-left: 25px;
+    margin-bottom: 2px;
+    text-transform: none;
+}
+h2.logo--subhead {
+    font-family: "VisbyCF-Bold";
+    color: #95b75d;
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 25px;
+    margin-top: 2px;
+    text-transform: none;
 }
 a.logo {
     font-size:21px;
@@ -700,7 +745,7 @@ ul.top-menu>li>a:hover,ul.top-menu>li>a:focus {
     float:left;
     margin-top:23px;
     margin-left:-15px;
-    background:#f89130;
+    background:#32323a;
       border: 3px solid #fff;
     border-radius:50%;
     -webkit-border-radius:50%;
@@ -6167,6 +6212,9 @@ p.nl-places-select__title { margin-bottom: 10px; }
 }
 .nl-total--close:active {
     opacity: 0.6;
+}
+.nl-deleted {
+    padding: 12px 0;
 }
 .nl-total-body {
     background-color: #fff;

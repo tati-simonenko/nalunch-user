@@ -343,25 +343,29 @@ $( document ).ready(function() {
     //     $(this).closest(".nl-total--item").hide();
     // });
 
-    var $message = $(".nl-total--item"),
-      $height=$message.height() + "px",
-      $delbox = $("<p class='deleted'>Сообщение удалено. <a href='vk.com' class='cancel'>Восстановить</a></p>")
-      .css({
-        "text-align":"center",
-        "min-height":$height,
-        "line-height":$height,
-        "vertical-align":"middle"
-      });
-      $(".nl-total--close").click(function(event){
-        event.preventDefault();
-        $(this).closest(".nl-total--item").hide();
-        $delbox.appendTo($message.parent()).fadeIn();
-     
-      $(".cancel").click(function(event){
-        event.preventDefault();
-        $delbox.remove();
-        $message.fadeIn();
-      });
+    var body   = $('.nl-total-body'),
+      delbox_str = "<p class='nl-deleted'>Удалено. <a href='#' class='nl-cancel'>Но я передумал!</a></p>";
+    
+  body.click(function(){
+    event.preventDefault();
+    
+    var target = $(event.target);
+    var parent = target.parent();
+    
+    if (target.hasClass('nl-total--close')){
+       var delbox = $(delbox_str);
+      
+       // parent.css('height', parent.height());
+       parent.children().hide();
+       parent.append(delbox);
+       delbox.fadeOut(3000);
+      
+    }
+    
+    if (target.hasClass('nl-cancel')){
+      parent.siblings().show();
+      parent.remove();
+    }
   });
 
 });
