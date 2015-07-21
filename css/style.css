@@ -5839,6 +5839,9 @@ right: -1px;
 input { color: #000!important; }
 input:focus { border: 1px solid #F99A00!important; }
 
+.text-nalunch {
+    color: #ef9d26;
+}
 .btn-nalunch {
     background-color: #ef9d26;
     border-color: #ef9d26;
@@ -6132,6 +6135,58 @@ p.nl-places-select__title { margin-bottom: 10px; }
 .nl-user__order-table td i:hover .nl-order__item-info { display: inline-block; }
 .nl-user__order-table .spinner-input { padding: 17px 12px; }
 
+.nl-user__total--head {
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    margin-right: 0;
+}
+.nl-total-heading {
+    background-color: #fafafa;
+    padding: 15px;
+    border-color: #eff2f7;
+    font-size: 13px;
+    color: #92b768;
+}
+.nl-user__total--body {
+    margin-right: 0;
+    background-color: #fff;
+}
+.nl-total--close {
+    float: right;
+    width: 20px;
+    height: 20px;
+    margin-top: 6px;
+    background-image: url(../images/icon-user-close.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    cursor: pointer;
+}
+.nl-total--close:hover {
+    opacity: 0.6;
+}
+.nl-total--close:active {
+    opacity: 0.6;
+}
+.nl-total-body {
+    background-color: #fff;
+}
+.nl-total-body {
+    padding: 15px;
+}
+.nl-total--item {
+    margin-bottom: 10px;
+}
+.nl-total--item p {
+    margin-bottom: 5px;
+}
+.nl-total--item i {
+    font-size: 12px;
+}
+.nl-total--order {
+    padding: 15px;
+}
+
 .nl-user__total-order {
     width: 256px;
     background-color: #fff;
@@ -6163,6 +6218,7 @@ p.nl-places-select__title { margin-bottom: 10px; }
     margin-bottom: 3px;
 }
 .nl-btn-add-cart {
+    margin-top: 40px;
     padding: 12px; 
 }
 

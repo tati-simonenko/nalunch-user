@@ -313,9 +313,11 @@ $( document ).ready(function() {
 });
 
 
-// Показываем окошко успеха при нажатии на кнопку Подтвердить
+
 
 $( document ).ready(function() {
+
+    // Показываем окошко успеха при нажатии на кнопку Подтвердить
 
     $(".js-nl-btn-proove").click(function(){
          $(this).parent().parent().parent().find(".nl-user__detail-order").hide().animate(300);
@@ -333,7 +335,38 @@ $( document ).ready(function() {
         $(this).parent().parent().parent().parent().parent().parent().parent().find(".nl-user-modal__order").hide().animate(300);
     });
 
+
+    // скрипт для nl-total--item, кнопка закрыть
+
+    // $(".nl-total--close").click(function(event){
+    //     event.preventDefault;
+    //     $(this).closest(".nl-total--item").hide();
+    // });
+
+    var $message = $(".nl-total--item"),
+      $height=$message.height() + "px",
+      $delbox = $("<p class='deleted'>Сообщение удалено. <a href='vk.com' class='cancel'>Восстановить</a></p>")
+      .css({
+        "text-align":"center",
+        "min-height":$height,
+        "line-height":$height,
+        "vertical-align":"middle"
+      });
+      $(".nl-total--close").click(function(event){
+        event.preventDefault();
+        $(this).closest(".nl-total--item").hide();
+        $delbox.appendTo($message.parent()).fadeIn();
+     
+      $(".cancel").click(function(event){
+        event.preventDefault();
+        $delbox.remove();
+        $message.fadeIn();
+      });
+  });
+
 });
+
+
 
 
 
