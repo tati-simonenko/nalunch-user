@@ -45,6 +45,14 @@ ul li {
     /*list-style:none;*/
 }
 
+li {
+    color: #32323A;
+}
+/*поставим всем элементам темный стандартный цвет*/
+p, td, label, input, div, select, option {
+    color: #32323A;
+}
+
 a,a:hover,a:focus {
     text-decoration:none;
     outline:none;
@@ -226,6 +234,7 @@ a,a:hover,a:focus {
 .right-side-accordion li:nth-child(2) ul li .prog-row {
     border: none;
 }
+.right-side-accordion i.fa { color: #8f8f9b; }
 /*---*/
 .nav-collapse.collapse {
     display:inline;
@@ -805,6 +814,13 @@ ul.top-menu>li>a:hover,ul.top-menu>li>a:focus {
     padding:10px;
     color: #bfbfc1;
 }
+.nl-toggle-messages {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.nl-toggle-messages .fa-bars { padding: 8px; color: #000; }
 /*right sidebar*/
 .right-sidebar {
     background:#32323A;
@@ -855,6 +871,11 @@ ul.top-menu>li>a:hover,ul.top-menu>li>a:focus {
 .right-side-accordion .yellow-bg {
     background:#f3c022;
     color:#fff;
+}
+.prog-row.text-danger i,
+.prog-row.text-danger p { color: #FF6C60; }
+.prog-row .progress {
+    margin-bottom:0;
 }
 .prog-row {
     border-bottom:1px solid #3C3C44;
@@ -2388,6 +2409,9 @@ ul.inbox-pagination li {
     font-weight:bold;
     margin-bottom:0;
 }
+.profile-information--restaurant .profile-desk h1 {
+    color:#57c8f1;
+}
 .profile-information .profile-desk span,.profile-information .profile-desk p {
     padding-bottom:25px;
     display:inline-block;
@@ -2665,7 +2689,7 @@ ul.inbox-pagination li {
 }
 /*invoice*/
 .invoice p {
-    color:#aeaeb1;
+    color:#32323A;
     margin-bottom: 0;
 }
 
@@ -2756,6 +2780,7 @@ ul.amounts li.grand-total {
     -webkit-border-radius:5px;
     vertical-align:middle;
 }
+.table-invoice tr td:nth-child(1) { width: 50px; }
 .invoice-block {
     text-align:right;
 }
@@ -2972,6 +2997,10 @@ ul.amounts li {
 .tab-bg-dark-navy-blue ul>li>a {
     display:block;
     padding:20px 15px !important;
+    font-size: 14px !important;
+}
+.profile-information--restaurant .tab-bg-dark-navy-blue ul>li>a {
+    font-weight: bold;
 }
 .tab-bg-dark-navy-blue {
     background:#e0e1e7 !important;
@@ -2983,7 +3012,16 @@ ul.amounts li {
 .tab-bg-dark-navy-blue li a:hover, .tab-bg-dark-navy-blue li.active a {
     border-radius: 0 !important;
     background: #fff !important;
-    color: #31708f !important;
+    color: #000 !important;
+    font-size: 14px !important;
+}
+.profile-information--restaurant .nl-tab-bg-dark-navy-blue li a:hover, 
+.profile-information--restaurant .tab-bg-dark-navy-blue li.active a {
+    border-radius: 0 !important;
+    background: #3DC9F8 !important;
+    color: #fff !important;
+    font-size: 14px !important;
+      border-bottom-color: #3DC9F8!important;
 }
 .panel-heading .nav>li>a,.panel-heading .nav>li.active>a,.panel-heading .nav>li.active>a:hover,.panel-heading .nav>li.active>a:focus {
     border-width:0;
@@ -5893,6 +5931,7 @@ input:focus { border: 1px solid #F99A00!important; }
      color: #fff;
     background-color: #e28d11;
 }
+.text-small { font-size: 11px; }
 .nl-btn-drop {
     display: inline-block;
     text-decoration: underline;
@@ -5941,9 +5980,20 @@ select.form-control:focus {
     border: 1px solid #ef9d26;
 }
 
+/*special for dishes*/
+
+.nl-dishes .col-lg-6:nth-child(1) {
+    position: static;
+}
+.nl-dishes .dataTables_length {
+  bottom: 47px;
+  z-index: 2;
+}
+
 /*рабочий стол*/
 
 .nl-mini-stat .mini-stat { min-height: 120px; }
+.nl-mini-stat .mini-stat-icon { margin-bottom: 27px; }
 .mini-stat-info span i.fa-rub { font-size: 21px; }
 .message-avatar {
     width: 40px;
@@ -5953,6 +6003,11 @@ select.form-control:focus {
 .prog-row .text-danger p {
     color: #FF6C60;
 }
+.nl-day-stats {
+    font-size: 10px;
+    display: block;
+}
+.nl-day-stats:hover { text-decoration: underline; }
 
 /*dishes*/
 
@@ -5976,7 +6031,10 @@ select.form-control:focus {
 .nl-dishes-categories #tags_1_tag {width: 141px !important;}
 .nl-dishes .form-inline table .form-control { width: 100px !important; }
 .nl-dishes .form-inline table td:nth-child(1) .form-control { width: 150px !important; }
-
+.nl-dishes-search__tools { position: relative; }
+.nl-dishes-search__tools .nl-dishes-tools__toggle { display: inline-block; position: relative; }
+.nl-dishes-search__tools .nl-dishes-tools__toggle i { margin-left: 7px; }
+.nl-btn-add-dish { font-weight: bold; }
 #editable-sample_filter {
       position: absolute;
   top: -59px;
@@ -5988,6 +6046,37 @@ select.form-control:focus {
 }
 .nl-dishes--head-filter { margin-bottom: 10px; }
 .adv-table.nl-dishes .dataTables_filter label { text-align: right; }
+.nl-dishes table a:hover { text-decoration: underline; }
+
+.nl-dishes td i {
+    /*float: right;*/
+    line-height: 22px;
+    position: relative;
+}
+
+.fa-info-circle:before { color: #C4C5C6; }
+.fa-info-circle:hover:before { color: #A1A2A3; }
+
+.nl-order__item-info { 
+    display: none; 
+    position: absolute;
+    top: -15px;
+    left: 14px;
+    background-color: #fff;
+    padding: 15px 20px;
+    width: 300px;
+    border: 1px solid #ddd;
+    z-index: 101;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+}
+
+.nl-dishes td i:hover .nl-order__item-info { display: inline-block; }
+.nl-dishes .spinner-input { padding: 17px 12px; }
+
+.tag-modal {
+    display: none;
+}
 
 /*транзакции*/
 
@@ -6007,8 +6096,11 @@ select.form-control:focus {
     display: inline-block;
     vertical-align: top;
 }
-.nl-filter-date { width: 46%; }
-.nl-filter-place { width: 52%; text-align: right; }
+.nl-filter-row { font-size: 0; }
+.nl-filter-date { width: 47%; }
+.nl-filter-place { width: 53%; text-align: right; }
+.nl-filter-date .transaction-range { width: 65%; }
+
 .nl-tracsations-dates { width: 30%; }
 .transaction-range { width: 65%; }
 
@@ -6030,6 +6122,7 @@ select.form-control:focus {
 .nl-btn-menu { margin-bottom: 5px; }
 .nl-table-menu { margin-bottom: 10px; }
 .nl-table-menu input:focus { border: 1px solid #F99A00!important; }
+.nl-table-menu th:last-of-type { min-width: 100px; }
 .nl-btn-menu-save { margin-top: 15px; }
 .nl-table-menu tr td:nth-child(1) { width: 40% !important; }
 .nl-table-menu .fa-angle-down:before {
@@ -6042,6 +6135,14 @@ select.form-control:focus {
   top: 2px;
   right: 7px;
 }
+
+.nl-places-select--clients { margin-bottom: 25px; }
+.nl-places-select--clients .tagsinput { min-height: 35px !important; height: 35px !important; }
+.nl-places-select--clients .tagsinput span.tag { padding: 3px 6px !important; }
+.nl-places-select--clients #tags_1_tag { padding-top: 2px; height: 24px; }
+.nl-places-select--clients div.tagsinput span.tag { background: #57c8f1 !important; color: #32323A !important; }
+.nl-places-select--clients div.tagsinput span.tag a { color: #32323A !important; }
+
 .nl-places-select p { margin-bottom: 3px; }
 p.nl-places-select__title { margin-bottom: 10px; }
 .nl-menu__choose-date { margin-bottom: 4px; }
@@ -6058,6 +6159,7 @@ p.nl-places-select__title { margin-bottom: 10px; }
     .nl-dishes-search .dataTables_filter { width: 100%; }
     .nl-dishes-search > div { margin-bottom: 5px; }
 }
+#tags_1_tag { width: 100%; }
 
 /*profile*/
 

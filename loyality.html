@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="ThemeBucket">
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <title>наЛанч: Программа лояльности</title>
+    <!--Core CSS -->
+    <link href="bs3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-reset.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/bootstrap-switch.css" />
+    <link rel="stylesheet" type="text/css" href="js/bootstrap-fileupload/bootstrap-fileupload.css" />
+    <link rel="stylesheet" type="text/css" href="js/bootstrap-wysihtml5/bootstrap-wysihtml5.css" />
+
+    <link rel="stylesheet" type="text/css" href="js/jquery-multi-select/css/multi-select.css" />
+    <link rel="stylesheet" type="text/css" href="js/jquery-tags-input/jquery.tagsinput.css" />
+
+    <link rel="stylesheet" type="text/css" href="js/select2/select2.css" />
+
+     <!--dynamic table-->
+    <link href="js/advanced-datatable/css/demo_page.css" rel="stylesheet" />
+    <link href="js/advanced-datatable/css/demo_table.css" rel="stylesheet" />
+    <link rel="stylesheet" href="js/data-tables/DT_bootstrap.css" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]>
+    <script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<section id="container" >
+<!--header start-->
+<header class="header fixed-top clearfix">
+<!--logo start-->
+<div class="brand">
+
+    <a href="index-restaurant.html" class="logo">
+        <img src="images/logo-header.png" alt="">
+    </a>
+    <div class="sidebar-toggle-box">
+        <div class="fa fa-bars"></div>
+    </div>
+</div>
+<!--logo end-->
+
+<div class="nav notify-row" id="top_menu">
+    <!--  notification start -->
+    <ul class="nav top-menu">
+
+        <!-- inbox dropdown start-->
+        <li id="header_inbox_bar" class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                <i class="fa fa-envelope-o"></i>
+                <span class="badge bg-success">4</span>
+            </a>
+            <ul class="dropdown-menu extended inbox">
+                <li>
+                    <p class="red">У вас 4 новых заказа</p>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="photo"><img class="message-avatar"></span>
+                                <span class="subject">
+                                <span class="from">i-Free: 22.06-29.06</span>
+                                <span class="time">Только что</span>
+                                </span>
+                                <span class="message">
+                                    6 заказов, 13 008 рублей.
+                                </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="photo"><img class="message-avatar"></span>
+                                <span class="subject">
+                                <span class="from">i-Free: 22.06-29.06</span>
+                                <span class="time">12 часов назад</span>
+                                </span>
+                                <span class="message">
+                                    6 заказов, 13 008 рублей.
+                                </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="photo"><img class="message-avatar"></span>
+                                <span class="subject">
+                                <span class="from">i-Free: 22.06-29.06</span>
+                                <span class="time">2 дня назад</span>
+                                </span>
+                                <span class="message">
+                                    6 заказов, 13 008 рублей.
+                                </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="photo"><img class="message-avatar"></span>
+                                <span class="subject">
+                                <span class="from">i-Free: 22.06-29.06</span>
+                                <span class="time">Неделя назад</span>
+                                </span>
+                                <span class="message">
+                                    6 заказов, 13 008 рублей.
+                                </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="order.html">Посмотреть все заказы</a>
+                </li>
+            </ul>
+        </li>
+        <!-- inbox dropdown end -->
+        <!-- notification dropdown start-->
+        <li id="header_notification_bar" class="dropdown">
+            <div class="toggle-right-box nl-toggle-messages">
+                <div class="fa fa-bars"></div>
+                <span class="badge bg-important">3</span>
+            </div>
+        </li>
+        
+        <!-- notification dropdown end -->
+    </ul>
+    <!--  notification end -->
+</div>
+<div class="top-nav clearfix">
+    <!--search & user info start-->
+    <ul class="nav pull-right top-menu">
+        <li>
+            <input type="text" class="form-control search" placeholder=" Поиск">
+        </li>
+        <!-- user login dropdown start-->
+        <li class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                <img alt="" src="images/placeholder.png">
+                <span class="username">Имя ресторана</span>
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu extended logout">
+                <li><a href="profile-restaurant.html"><i class=" fa fa-suitcase"></i>Профиль</a></li>
+                <li><a href="index-restaurant.html"><i class="fa fa-key"></i>Выйти из профиля</a></li>
+            </ul>
+        </li>
+        <!-- user login dropdown end -->
+        
+    </ul>
+    <!--search & user info end-->
+</div>
+</header>
+<!--header end-->
+<aside>
+    <div id="sidebar" class="nav-collapse">
+        <!-- sidebar menu start-->
+        <div class="leftside-navigation">
+            <ul class="sidebar-menu" id="nav-accordion">
+                <li>
+                    <a href="index-restaurant.html">
+                        <i class="fa fa-dashboard"></i>
+                        <span>Рабочий стол</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="sub-menu">
+                        <i class="fa fa-rouble"></i>
+                        <span>Транзакции</span>
+                    </a>
+                    <ul class="sub">
+                        <li><a href="transactions.html">Детальный отчет</a></li>
+                        <li><a href="transactions-places.html">Отчет по ресторанам</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="loyality.html" class="active">
+                        <i class="fa fa-star"></i>
+                        <span>Лояльность</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="sub-menu">
+                        <i class="fa fa-truck"></i>
+                        <span>Доставка</span>
+                    </a>
+                    <ul class="sub">
+                        <li><a href="order.html">Заказы</a></li>
+                        <li><a href="clients.html">Клиенты</a></li>
+                        <li><a href="menu.html">Меню</a></li>
+                        <li><a href="dishes.html">Блюда</a></li>
+                    </ul>
+                </li>
+
+               <li>
+                    <a href="profile-restaurant.html">
+                        <i class="fa fa-user"></i>
+                        <span>Профиль</span>
+                    </a>
+                </li>
+                
+            </ul>            </div>
+        <!-- sidebar menu end-->
+    </div>
+</aside>
+<!--sidebar end-->
+
+    <!--main content start-->
+    <section id="main-content">
+        <section class="wrapper">
+        <!-- page start-->
+
+        <div class="row">
+            <div class="col-md-12">
+                <section class="panel">
+                    <header class="panel-heading">
+                        Информация о программе лояльности
+                        <span class="tools pull-right">
+                            <a class="fa fa-chevron-down"></a>
+                         </span>
+                    </header>
+                    <div class="panel-body" style="display: none;">
+                        <div class="adv-table editable-table ">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>Мы разработали инфраструктуру для использования программы лояльности* в вашем заведении для повешения уровня лояльности гостей.
+                                    <p>*услуга входит в стоимость работы по договору.</p>
+                                    <p>Механика: гости получают баллы в момент оплаты счета, копят баллы и обменивают на вкусные подарки.</p>
+                                    <p>Подарки: количество баллов и варианты подарков вы устанавливаете самостоятельно, исходя из принципа 1 балл = 100 рублей. Менять вариации подарков вы можете в любые удобные временные периоды.</p>
+                                    <p>Как выдавать призы:</p>
+                                    <ol>
+                                        <li>В момент накопления гостем х-баллов на первый подарок терминал выведет информационное сообщение на экран.</li>
+                                        <li>Официанту необходимо уточнить хочет ли гость получить подарок сейчас и нажать на соотвествующу кнопку «да» или «нет».</li>
+                                        <li>В каждом чеке указана информация о том сколько баллов зачислено за транзакцию и сколько всего баллов.</li>
+                                        <li>В вашем личном кабинете вы можете выгрузить детальный и общий отчет по количеству выданных подарков.</li>
+                                    </ol>
+                                    <p>Для запуска программы лояльности напишите нам на почту <a href="mailto:info@nalunch.ru">info@nalunch.ru</a></p>
+                                    
+                                    </p>
+                                    <!-- <button type="button" class="btn btn-success btn-sm">Скачать инструкцию для официантов</button>
+                                    <button type="button" class="btn btn-success btn-sm">Изменить программу лояльности</button> -->
+                                </div>
+                            </div>
+                            <div class="space15"></div>
+                        </div>
+                    </div>
+                </section>
+
+
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <section class="panel">
+                    <header class="panel-heading">
+                        Общий отчет по заведениям
+                        <span class="tools pull-right">
+                            <a class="fa fa-chevron-down"></a>
+                         </span>
+                    </header>
+                    <div class="panel-body" style="display: none;">
+                        <div class="adv-table editable-table ">
+                            <div class="row">
+                                <div class="col-md-8">
+
+                                    <table class="table table-hover" id="editable-sample">
+                                    <thead>
+                                    <tr>
+                                        <th>Заведение</th>
+                                        <th>Выдано призов</th>
+                                        <th>Статус</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr class="">
+                                        <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
+                                        <td>5</td>
+                                        <th><span class="label label-warning label-mini">Не вктивен</span></th>
+                                    </tr>
+                                    <tr class="">
+                                        <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
+                                        <td>5</td>
+                                        <th><span class="label label-warning label-mini">Не активен</span></th>
+                                    </tr>
+                                    <tr class="">
+                                        <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
+                                        <td>5</td>
+                                        <th><span class="label label-success label-mini">Активен</span></th>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                    
+                                </div>
+                            </div>
+                            <div class="space15"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-12">
+            
+                <section class="panel">
+                    <header class="panel-heading">
+                        Программа лояльности
+                        <span class="tools pull-right">
+                            <a class="fa fa-chevron-up"></a>
+                         </span>
+                    </header>
+                    <div class="panel-body" >
+                       
+                        <div class="nl-filter-row">
+                            <div class="nl-filter-date">
+                                <div class="form-group">
+                                    <label class="control-label tracsations-dates nl-tracsations-dates">Выберите даты</label>
+                                    <div class="transaction-range">
+                                        <div class="input-group input-large " data-date="06/16/2015" data-date-format="mm.dd.yyyy">
+                                            <input type="text" class="form-control dpd1" name="from" value="01.16.2015">
+                                            <span class="input-group-addon">по</span>
+                                            <input type="text" class="form-control dpd2" name="to" value="06.16.2015">
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nl-filter-place">
+                                <div class="nl-select-group">
+                                    <select name="" id="" class="nl-select nl-select-basic">
+                                        <option value="" selected>Показать все призы</option>
+                                        <option value="">Чизкейк лимонный</option>
+                                        <option value="">Молочный коктель ванильный</option>
+                                        <option value="">Молочный коктель клубничный</option>
+                                    </select>
+                                </div>
+                                <div class="nl-select-group">
+                                    <select name="" id="e1" class="nl-select nl-select-basic">
+                                        <option value="" selected>Показать все точки питания</option>
+                                        <option value="">"Pizza Ollis", Кронверкский пр. д. 61/28&nbsp;</option>
+                                        <option value="">"Pizza Ollis", Кронверкский пр. д. 61/28&nbsp;</option>
+                                        <option value="">"Pizza Ollis", Кронверкский пр. д. 61/28&nbsp;</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row">&nbsp;</div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <button type="button" class="btn btn-warning">Фильтровать</button>
+                        <a href="" class="nl-btn-drop text-muted">Сбросить</a>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="panel-body">
+                        <div class="adv-table">
+                            <div class="row">
+                                <div class="col-xs-9">
+                                </div>
+                                <div class="col-xs-3 align-right nl-dishes-search__tools">
+                                     <button class="btn btn-default dropdown-toggle nl-dishes-tools__toggle" data-toggle="dropdown">Отправить<i class="fa fa-angle-down"></i>
+                                    </button>
+                                    <ul class="dropdown-menu pull-right">
+                                        <li><a href="#">Печать</a></li>
+                                        <li><a href="#">Сохранить как PDF</a></li>
+                                        <li><a href="#">В Excel</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <table  class="display table table-bordered table-striped" id="dynamic-table">
+                                <thead>
+                                    <tr>
+                                        <th>Заведение</th>
+                                        <th>Номер карты</th>
+                                        <th>Списано баллов</th>
+                                        <th>Выдан приз</th>
+                                        <th>Дата и время</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="">
+                                        <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
+                                        <td>2830202731 (A8B1776B</td>
+                                        <td>20</td>
+                                        <td>Чизкейк лимонный</td>
+                                        <td>05.06.2015 18:51:47</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>"Mama Roma", Средний проспект В.О., 6</td>
+                                        <td>2830202731 (A8B1696B)</td>
+                                        <td>5</td>
+                                        <td>Молочный коктель ванильный</td>
+                                        <td>05.07.2015 18:51:47</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>"Mama Roma", пр-кт Большой, 70</td>
+                                        <td>2830202731 (A8B11160)</td>
+                                        <td>2</td>
+                                        <td>Молочный коктель клубничный</td>
+                                        <td>15.06.2015 18:51:47</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
+                                        <td>2830202731 (A8B1776B</td>
+                                        <td>20</td>
+                                        <td>Чизкейк лимонный</td>
+                                        <td>05.06.2015 18:51:47</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>"Mama Roma", Средний проспект В.О., 6</td>
+                                        <td>2830202731 (A8B1696B)</td>
+                                        <td>5</td>
+                                        <td>Молочный коктель ванильный</td>
+                                        <td>05.07.2015 18:51:47</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>"Mama Roma", пр-кт Большой, 70</td>
+                                        <td>2830202731 (A8B11160)</td>
+                                        <td>2</td>
+                                        <td>Молочный коктель клубничный</td>
+                                        <td>15.06.2015 18:51:47</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
+                                        <td>2830202731 (A8B1776B</td>
+                                        <td>20</td>
+                                        <td>Чизкейк лимонный</td>
+                                        <td>05.06.2015 18:51:47</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>"Mama Roma", Средний проспект В.О., 6</td>
+                                        <td>2830202731 (A8B1696B)</td>
+                                        <td>5</td>
+                                        <td>Молочный коктель ванильный</td>
+                                        <td>05.07.2015 18:51:47</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>"Mama Roma", пр-кт Большой, 70</td>
+                                        <td>2830202731 (A8B11160)</td>
+                                        <td>2</td>
+                                        <td>Молочный коктель клубничный</td>
+                                        <td>15.06.2015 18:51:47</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
+                                        <td>2830202731 (A8B1776B</td>
+                                        <td>20</td>
+                                        <td>Чизкейк лимонный</td>
+                                        <td>05.06.2015 18:51:47</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>"Mama Roma", Средний проспект В.О., 6</td>
+                                        <td>2830202731 (A8B1696B)</td>
+                                        <td>5</td>
+                                        <td>Молочный коктель ванильный</td>
+                                        <td>05.07.2015 18:51:47</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>"Mama Roma", пр-кт Большой, 70</td>
+                                        <td>2830202731 (A8B11160)</td>
+                                        <td>2</td>
+                                        <td>Молочный коктель клубничный</td>
+                                        <td>15.06.2015 18:51:47</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
+                                        <td>2830202731 (A8B1776B</td>
+                                        <td>20</td>
+                                        <td>Чизкейк лимонный</td>
+                                        <td>05.06.2015 18:51:47</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>"Mama Roma", Средний проспект В.О., 6</td>
+                                        <td>2830202731 (A8B1696B)</td>
+                                        <td>5</td>
+                                        <td>Молочный коктель ванильный</td>
+                                        <td>05.07.2015 18:51:47</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>"Mama Roma", пр-кт Большой, 70</td>
+                                        <td>2830202731 (A8B11160)</td>
+                                        <td>2</td>
+                                        <td>Молочный коктель клубничный</td>
+                                        <td>15.06.2015 18:51:47</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
+                                        <td>2830202731 (A8B1776B</td>
+                                        <td>20</td>
+                                        <td>Чизкейк лимонный</td>
+                                        <td>05.06.2015 18:51:47</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>"Mama Roma", Средний проспект В.О., 6</td>
+                                        <td>2830202731 (A8B1696B)</td>
+                                        <td>5</td>
+                                        <td>Молочный коктель ванильный</td>
+                                        <td>05.07.2015 18:51:47</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>"Mama Roma", пр-кт Большой, 70</td>
+                                        <td>2830202731 (A8B11160)</td>
+                                        <td>2</td>
+                                        <td>Молочный коктель клубничный</td>
+                                        <td>15.06.2015 18:51:47</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
+                                        <td>2830202731 (A8B1776B</td>
+                                        <td>20</td>
+                                        <td>Чизкейк лимонный</td>
+                                        <td>05.06.2015 18:51:47</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>"Mama Roma", Средний проспект В.О., 6</td>
+                                        <td>2830202731 (A8B1696B)</td>
+                                        <td>5</td>
+                                        <td>Молочный коктель ванильный</td>
+                                        <td>05.07.2015 18:51:47</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>"Mama Roma", пр-кт Большой, 70</td>
+                                        <td>2830202731 (A8B11160)</td>
+                                        <td>2</td>
+                                        <td>Молочный коктель клубничный</td>
+                                        <td>15.06.2015 18:51:47</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>Заведение</th>
+                                        <th>Номер карты</th>
+                                        <th>Списано баллов</th>
+                                        <th>Выдан приз</th>
+                                        <th>Дата и время</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+
+                </section>
+
+
+            </div>
+        </div>
+        <!-- page end-->
+        </section>
+    </section>
+    <!--main content end-->
+<!--right sidebar start-->
+<div class="right-sidebar">
+    <div class="search-row">
+        <input type="text" placeholder="Поиск" class="form-control">
+    </div>
+    <div class="right-stat-bar">
+        <ul class="right-side-accordion">
+
+            <li class="widget-collapsible">
+                <a href="#" class="head widget-head bg-success active clearfix">
+                    <span class="pull-left"> Лента уведомлений</span>
+                    <span class="pull-right widget-collapse"><i class="ico-minus"></i></span>
+                </a>
+                <ul class="widget-container">
+                    <li>
+                        <div class="prog-row clearfix">
+                            <div class="user-thumb rsn-activity">
+                                <i class="fa fa-clock-o"></i>
+                            </div>
+                            <div class="rsn-details ">
+                                <p class="text-muted">
+                                    1 час назад
+                                </p>
+                                <p>
+                                    Напоминаем, что необходимо добавить меню на следующую неделю
+                                </p>
+                            </div>
+                        </div>
+                        <div class="prog-row clearfix">
+                            <div class="user-thumb rsn-activity">
+                                <i class="fa fa-clock-o"></i>
+                            </div>
+                            <div class="rsn-details ">
+                                <p class="text-muted">
+                                    2 часа назад
+                                </p>
+                                <p>
+                                    Не забудьте отправить отчет
+                                </p>
+                            </div>
+                        </div>
+                        <div class="prog-row text-danger">
+                            <div class="user-thumb rsn-activity">
+                                <i class="fa fa-flash"></i>
+                            </div>
+                            <div class="rsn-details">
+                                <p class="text-muted">
+                                    1 час назад
+                                </p>
+                                <p>
+                                    Очень срочное важное сообщение!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="prog-row">
+                            <div class="user-thumb rsn-activity">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="rsn-details ">
+                                <p class="text-muted">
+                                    Воскресенье, 7 июня
+                                </p>
+                                <p>
+                                    Меню для <a href="#">Имя компании </a> на неделю сформировано. Детализация отправлена вам на почту.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="widget-collapsible">
+                <a href="#" class="head widget-head red-bg">
+                    <span class="pull-left">work progress (5)</span>
+                    <span class="pull-right widget-collapse"><i class="ico-minus"></i></span>
+                </a>
+                <ul class="widget-container">
+                    <li>
+                        <div class="prog-row side-mini-stat clearfix">
+                            <div class="side-graph-info">
+                                <h4>Target sell</h4>
+                                <p>
+                                    25%, Deadline 12 june 13
+                                </p>
+                            </div>
+                            <div class="side-mini-graph">
+                                <div class="target-sell">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prog-row side-mini-stat">
+                            <div class="side-graph-info">
+                                <h4>product delivery</h4>
+                                <p>
+                                    55%, Deadline 12 june 13
+                                </p>
+                            </div>
+                            <div class="side-mini-graph">
+                                <div class="p-delivery">
+                                    <div class="sparkline" data-type="bar" data-resize="true" data-height="30" data-width="90%" data-bar-color="#39b7ab" data-bar-width="5" data-data="[200,135,667,333,526,996,564,123,890,564,455]">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prog-row side-mini-stat">
+                            <div class="side-graph-info payment-info">
+                                <h4>payment collection</h4>
+                                <p>
+                                    25%, Deadline 12 june 13
+                                </p>
+                            </div>
+                            <div class="side-mini-graph">
+                                <div class="p-collection">
+                                    <span class="pc-epie-chart" data-percent="45">
+                                    <span class="percent"></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prog-row side-mini-stat">
+                            <div class="side-graph-info">
+                                <h4>delivery pending</h4>
+                                <p>
+                                    44%, Deadline 12 june 13
+                                </p>
+                            </div>
+                            <div class="side-mini-graph">
+                                <div class="d-pending">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prog-row side-mini-stat">
+                            <div class="col-md-12">
+                                <h4>total progress</h4>
+                                <p>
+                                    50%, Deadline 12 june 13
+                                </p>
+                                <div class="progress progress-xs mtop10">
+                                    <div style="width: 50%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" role="progressbar" class="progress-bar progress-bar-info">
+                                        <span class="sr-only">50% Complete</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+
+
+        </ul>
+
+    </div>
+
+</div>
+<!--right sidebar end-->
+</section>
+
+<!-- Placed js at the end of the document so the pages load faster -->
+
+<!--Core js-->
+<script src="js/jquery.js"></script>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="bs3/js/bootstrap.min.js"></script>
+<script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+<script class="include" type="text/javascript" src="js/jquery.dcjqaccordion.2.7.js"></script>
+<script src="js/jquery.scrollTo.min.js"></script>
+<script src="js/easypiechart/jquery.easypiechart.js"></script>
+<script src="js/jQuery-slimScroll-1.3.0/jquery.slimscroll.js"></script>
+<script src="js/jquery.nicescroll.js"></script>
+<script src="js/jquery.nicescroll.js"></script>
+
+<script src="js/bootstrap-switch.js"></script>
+
+<script type="text/javascript" src="js/fuelux/js/spinner.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-fileupload/bootstrap-fileupload.js"></script>
+<script type="text/javascript" src="js/bootstrap-wysihtml5/wysihtml5-0.3.0.js"></script>
+<script type="text/javascript" src="js/bootstrap-wysihtml5/bootstrap-wysihtml5.js"></script>
+
+<script type="text/javascript" src="js/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+
+<script type="text/javascript" src="js/jquery-multi-select/js/jquery.multi-select.js"></script>
+<script type="text/javascript" src="js/jquery-multi-select/js/jquery.quicksearch.js"></script>
+
+<script type="text/javascript" src="js/bootstrap-inputmask/bootstrap-inputmask.min.js"></script>
+
+<script src="js/jquery-tags-input/jquery.tagsinput.js"></script>
+
+<script src="js/select2/select2.js"></script>
+<script src="js/select-init.js"></script>
+
+<!-- table -->
+
+<script type="text/javascript" language="javascript" src="js/advanced-datatable/js/jquery.dataTables.js"></script>
+<script type="text/javascript" src="js/data-tables/DT_bootstrap.js"></script>
+
+
+<!--common script init for all pages-->
+<script src="js/scripts.js"></script>
+
+<script src="js/toggle-init.js"></script>
+
+<script src="js/advanced-form.js"></script>
+<!--Easy Pie Chart-->
+<script src="js/easypiechart/jquery.easypiechart.js"></script>
+<!--Sparkline Chart-->
+<script src="js/sparkline/jquery.sparkline.js"></script>
+<!--jQuery Flot Chart-->
+<script src="js/flot-chart/jquery.flot.js"></script>
+<script src="js/flot-chart/jquery.flot.tooltip.min.js"></script>
+<script src="js/flot-chart/jquery.flot.resize.js"></script>
+<script src="js/flot-chart/jquery.flot.pie.resize.js"></script>
+
+<script src="js/dynamic_table_init.js"></script>
+
+</body>
+</html>
