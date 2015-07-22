@@ -5953,11 +5953,13 @@ input:focus { border: 1px solid #F99A00!important; }
 
 /*стили для таблиц*/
 
+table.display tfoot th {
+    padding: 10px;
+}
 .nl-dataTables_filter {
     padding: 0 0 15px 0;
     width: 90%;
 }
-
 /*.dataTables_length {
     position: absolute;
     bottom: -63px;
@@ -6113,6 +6115,16 @@ select.form-control:focus {
 }
 @media (max-width: 1000px) {
     .nl-filter-date { width: 100%; }
+}
+
+.nl-report-places tbody tr:nth-child(1) {
+    background-color: #f1f1f1;
+    font-weight: bold;
+}
+.nl-report-places tbody td:nth-child(2),
+.nl-report-places tbody td:nth-child(3) {
+    text-align: center;
+    
 }
 
 /*menu*/

@@ -177,10 +177,10 @@
                         <div class="form-group">
                             <label class="control-label tracsations-dates nl-tracsations-dates">Выберите даты</label>
                             <div class="transaction-range">
-                                <div class="input-group input-large " data-date="13/07/2013" data-date-format="mm/dd/yyyy">
-                                    <input type="text" class="form-control dpd1" name="from">
+                                <div class="input-group input-large " data-date="13.07.2013" data-date-format="dd.mm.yyyy">
+                                    <input type="text" class="form-control dpd1" name="from" value="01.07.2015">
                                     <span class="input-group-addon">по</span>
-                                    <input type="text" class="form-control dpd2" name="to">
+                                    <input type="text" class="form-control dpd2" name="to" value="31.07.2015">
                                 </div>
                                 
                             </div>
@@ -195,13 +195,7 @@
                                 <option value="">Бар "Dacha", Рубинштейна,27&nbsp;</option>
                             </select>
                         </div>
-                        <div class="nl-select-group">
-                            <select class="nl-select nl-select-basic">
-                                <option >Показать все транзакции</option>
-                                <option value="">Только успешные</option>
-                                <option value="">Только ошибочные</option>
-                            </select>
-                        </div>
+                       
                     </div>
                 </div>
                 <div class="row">&nbsp;</div>
@@ -218,7 +212,7 @@
             <div class="col-sm-12">
                 <section class="panel">
                     <header class="panel-heading">
-                        Детальный отчет о транзакциях
+                        Детальный отчет по заведениям
                         <span class="tools pull-right">
                             <a class="fa fa-chevron-down"></a>
                          </span>
@@ -248,198 +242,46 @@
                                 </ul>
                             </div>
                         </div>
-                    <table  class="display table table-bordered table-striped">
+                    <table  class="display table table-bordered table-striped nl-report-places">
                         <thead>
                             <tr>
-                                <th>Заведение</th>
-                                <th>Cумма</th>
-                                <th>Дата и время</th>
-                                <th>Баллы</th>
-                                <th>Оплачено работодателем</th>
-                                <th>Списано с личного счета</th>
+                                <th rowspan="2">Заведение</th>
+                                <th colspan="2" class="text-center">Количество транзакций</th>
+                                <th rowspan="2">Сумма</th>
+                            </tr>
+                            <tr>
+                                <th class="text-center">успешные</th>
+                                <th class="text-center">неудачные</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr class="">
-                                <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
-                                <td>235,00р.</td>
-                                <td>05.07.2015 18:51:47</td>
-                                <td>0</td>
-                                <td>200,00р.</td>
-                                <td>35,00р.</td>
-                            </tr>
-                            <tr class="">
-                                <td>"Mama Roma", Средний проспект В.О., 6</td>
-                                <td>205,00р.</td>
-                                <td>15.07.2015 18:51:47</td>
+                                <td>Всего</td>
+                                <td>55</td>
                                 <td>1</td>
-                                <td>200,00р.</td>
-                                <td>5,00р.</td>
-                            </tr>
-                            <tr class="">
-                                <td>"Mama Roma", пр-кт Большой, 70</td>
-                                <td>245,00р.</td>
-                                <td>16.07.2015 18:51:47</td>
-                                <td>1</td>
-                                <td>200,00р.</td>
-                                <td>45,00р.</td>
+                                <td>188 906,00р.</td>
                             </tr>
                             <tr class="">
                                 <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
-                                <td>235,00р.</td>
-                                <td>05.07.2015 18:51:47</td>
-                                <td>0</td>
-                                <td>200,00р.</td>
-                                <td>35,00р.</td>
+                                <td>31</td>
+                                <td>1</td>
+                                <td>8 906,00р.</td>
                             </tr>
                             <tr class="">
                                 <td>"Mama Roma", Средний проспект В.О., 6</td>
-                                <td>205,00р.</td>
-                                <td>15.07.2015 18:51:47</td>
-                                <td>1</td>
-                                <td>200,00р.</td>
-                                <td>5,00р.</td>
-                            </tr>
-                            <tr class="">
-                                <td>"Mama Roma", пр-кт Большой, 70</td>
-                                <td>245,00р.</td>
-                                <td>16.07.2015 18:51:47</td>
-                                <td>1</td>
-                                <td>200,00р.</td>
-                                <td>45,00р.</td>
-                            </tr>
-                            <tr class="">
-                                <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
-                                <td>235,00р.</td>
-                                <td>05.07.2015 18:51:47</td>
+                                <td>25</td>
                                 <td>0</td>
-                                <td>200,00р.</td>
-                                <td>35,00р.</td>
-                            </tr>
-                            <tr class="">
-                                <td>"Mama Roma", Средний проспект В.О., 6</td>
-                                <td>205,00р.</td>
-                                <td>15.07.2015 18:51:47</td>
-                                <td>1</td>
-                                <td>200,00р.</td>
-                                <td>5,00р.</td>
+                                <td>6 505,00р.</td>
                             </tr>
                             <tr class="">
                                 <td>"Mama Roma", пр-кт Большой, 70</td>
-                                <td>245,00р.</td>
-                                <td>16.07.2015 18:51:47</td>
-                                <td>1</td>
-                                <td>200,00р.</td>
-                                <td>45,00р.</td>
-                            </tr>
-                            <tr class="">
-                                <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
-                                <td>235,00р.</td>
-                                <td>05.07.2015 18:51:47</td>
+                                <td>4</td>
                                 <td>0</td>
-                                <td>200,00р.</td>
-                                <td>35,00р.</td>
-                            </tr>
-                            <tr class="">
-                                <td>"Mama Roma", Средний проспект В.О., 6</td>
-                                <td>205,00р.</td>
-                                <td>15.07.2015 18:51:47</td>
-                                <td>1</td>
-                                <td>200,00р.</td>
-                                <td>5,00р.</td>
-                            </tr>
-                            <tr class="">
-                                <td>"Mama Roma", пр-кт Большой, 70</td>
-                                <td>245,00р.</td>
-                                <td>16.07.2015 18:51:47</td>
-                                <td>1</td>
-                                <td>200,00р.</td>
-                                <td>45,00р.</td>
-                            </tr>
-                            <tr class="">
-                                <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
-                                <td>235,00р.</td>
-                                <td>05.07.2015 18:51:47</td>
-                                <td>0</td>
-                                <td>200,00р.</td>
-                                <td>35,00р.</td>
-                            </tr>
-                            <tr class="">
-                                <td>"Mama Roma", Средний проспект В.О., 6</td>
-                                <td>205,00р.</td>
-                                <td>15.07.2015 18:51:47</td>
-                                <td>1</td>
-                                <td>200,00р.</td>
-                                <td>5,00р.</td>
-                            </tr>
-                            <tr class="">
-                                <td>"Mama Roma", пр-кт Большой, 70</td>
-                                <td>245,00р.</td>
-                                <td>16.07.2015 18:51:47</td>
-                                <td>1</td>
-                                <td>200,00р.</td>
-                                <td>45,00р.</td>
-                            </tr>
-                            <tr class="">
-                                <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
-                                <td>235,00р.</td>
-                                <td>05.07.2015 18:51:47</td>
-                                <td>0</td>
-                                <td>200,00р.</td>
-                                <td>35,00р.</td>
-                            </tr>
-                            <tr class="">
-                                <td>"Mama Roma", Средний проспект В.О., 6</td>
-                                <td>205,00р.</td>
-                                <td>15.07.2015 18:51:47</td>
-                                <td>1</td>
-                                <td>200,00р.</td>
-                                <td>5,00р.</td>
-                            </tr>
-                            <tr class="">
-                                <td>"Mama Roma", пр-кт Большой, 70</td>
-                                <td>245,00р.</td>
-                                <td>16.07.2015 18:51:47</td>
-                                <td>1</td>
-                                <td>200,00р.</td>
-                                <td>45,00р.</td>
-                            </tr>
-                            <tr class="">
-                                <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
-                                <td>235,00р.</td>
-                                <td>05.07.2015 18:51:47</td>
-                                <td>0</td>
-                                <td>200,00р.</td>
-                                <td>35,00р.</td>
-                            </tr>
-                            <tr class="">
-                                <td>"Mama Roma", Средний проспект В.О., 6</td>
-                                <td>205,00р.</td>
-                                <td>15.07.2015 18:51:47</td>
-                                <td>1</td>
-                                <td>200,00р.</td>
-                                <td>5,00р.</td>
-                            </tr>
-                            <tr class="">
-                                <td>"Mama Roma", пр-кт Большой, 70</td>
-                                <td>245,00р.</td>
-                                <td>16.07.2015 18:51:47</td>
-                                <td>1</td>
-                                <td>200,00р.</td>
-                                <td>45,00р.</td>
+                                <td>500,00р.</td>
                             </tr>
                             
                         </tbody>
-                        <tfoot>
-                            <tr>
-                                <th>Заведение</th>
-                                <th>Cумма</th>
-                                <th>Дата и время</th>
-                                <th>Баллы</th>
-                                <th>Оплачено работодателем</th>
-                                <th>Списано с личного счета</th>
-                            </tr>
-                        </tfoot>
+                        
                     </table>
                     <div class="row nl-pagination">
                         <div class="col-xs-5">
