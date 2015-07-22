@@ -4042,14 +4042,11 @@ td.details table tr td,.dataTable tr:last-child {
 }
 .adv-table .dataTables_length select {
     display:inline-block;
-    margin:0 10px 0 0;
+    margin:0 2px 0 0;
     padding:5px 8px;
     width:65px;
 }
 .adv-table .dataTables_info,.dataTables_paginate {
-    padding:15px 0;
-}
-.adv-table .dataTables_length,.adv-table .dataTables_filter {
     padding:15px 0;
 }
 .cke_chrome {
@@ -5916,7 +5913,12 @@ input:focus { border: 1px solid #F99A00!important; }
 
 /*стили для таблиц*/
 
-.dataTables_length {
+.nl-dataTables_filter {
+    padding: 0 0 15px 0;
+    width: 90%;
+}
+
+/*.dataTables_length {
     position: absolute;
     bottom: -63px;
 }
@@ -5933,7 +5935,7 @@ input:focus { border: 1px solid #F99A00!important; }
 }
 .dataTables_info {
     width: 40%;
-}
+}*/
 select.form-control:active,
 select.form-control:focus {
     border: 1px solid #ef9d26;
@@ -5967,7 +5969,7 @@ select.form-control:focus {
 .nl-dishes-search .dataTables_filter { padding: 0; }
 .nl-dishes-search .dataTables_filter label input { width: 84%; }
 /*#main-content .nl-dishes > .clearfix { display: none !important; }
-*/.nl-dishes-pagination .dataTables_length { padding: 11px 0; }
+*/.nl-pagination .dataTables_length { padding: 11px 0; }
 .nl-dishes-search__tools .nl-dishes-tools__toggle { display: inline-block; }
 .nl-dishes-search__tools .nl-dishes-tools__toggle i { margin-left: 7px; }
 
