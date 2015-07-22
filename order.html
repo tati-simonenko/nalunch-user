@@ -18,9 +18,16 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style-responsive.css" rel="stylesheet" />
 
+    <link rel="stylesheet" type="text/css" href="js/bootstrap-datepicker/css/datepicker.css" />
 
     <link rel="stylesheet" type="text/css" href="js/bootstrap-daterangepicker/daterangepicker-bs3.css" />
     <link rel="stylesheet" type="text/css" href="js/bootstrap-datetimepicker/css/datetimepicker.css" />
+
+     <!--dynamic table-->
+    <link href="js/advanced-datatable/css/demo_page.css" rel="stylesheet" />
+    <link href="js/advanced-datatable/css/demo_table.css" rel="stylesheet" />
+    <link rel="stylesheet" href="js/data-tables/DT_bootstrap.css" />
+
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]>
@@ -42,7 +49,9 @@
 <div class="brand">
 
     <a href="index-restaurant.html" class="logo">
-        <img src="images/logo-header.png" alt="">
+        <!-- <img src="images/logo-header.png" alt=""> -->
+        <h1 class="logo--head">наЛанч</h1>
+        <h2 class="logo--subhead">hello, ресторан!</h2>
     </a>
     <div class="sidebar-toggle-box">
         <div class="fa fa-bars"></div>
@@ -578,10 +587,10 @@
                                                         <div class="form-group">
                                                             <label class="control-label tracsations-dates nl-tracsations-dates">Выберите даты</label>
                                                             <div class="transaction-range">
-                                                                <div class="input-group input-large " data-date="06/16/2015" data-date-format="mm/dd/yyyy">
-                                                                    <input type="text" class="form-control dpd1" name="from" >
+                                                                <div class="input-group input-large " data-date="06/16/2015" data-date-format="dd.mm.yyyy">
+                                                                    <input type="text" class="form-control dpd1" name="from" value="01.07.2015">
                                                                     <span class="input-group-addon">по</span>
-                                                                    <input type="text" class="form-control dpd2" name="to" >
+                                                                    <input type="text" class="form-control dpd2" name="to" value="31.07.2015">
                                                                 </div>
                                                                 
                                                             </div>
@@ -598,7 +607,7 @@
                                                 <div class="row">
                                                     <div class="col-xs-12">
                                                         <button type="button" class="btn btn-warning">Фильтровать</button>
-                        <a href="" class="nl-btn-drop text-muted">Сбросить</a>
+                                                        <a href="" class="nl-btn-drop text-muted">Сбросить</a>
                                                     </div>
                                                 </div>
                                                 
@@ -1168,23 +1177,21 @@
                                     </div>
                                 </div>
 
-                                <div class="row nl-archive-pagination">
-                                    <div class="col-xs-2">
+                               <div class="row nl-pagination nl-pagination--archive">
+                                    <div class="col-xs-5">
                                         <div class="dataTables_length">
                                             <label>
                                                 <select size="1" name="editable-sample_length" aria-controls="editable-sample" class="form-control xsmall">
-                                                <option value="5">20</option>
-                                                <option value="15" selected="selected">50</option>
-                                                <option value="20">100</option>
-                                                <option value="-1">Все</option>
-                                                </select> 
-                                                <span class="pagination-text">на странице</span>
+                                                <option value="">20</option>
+                                                <option value="" selected="selected">50</option>
+                                                <option value="">100</option>
+                                                <option value="">Все</option>
+                                                </select> на&nbsp;странице
                                             </label>
                                         </div>
-                                    </div>
-                                    <div class="col-xs-3">
                                         <div class="dataTables_info">Показано 1 по 5 из 28</div>
                                     </div>
+                                    
                                     <div class="col-xs-7">
                                         <div class="dataTables_paginate paging_bootstrap pagination"><ul><li class="prev disabled"><a href="#">← Предыдущая</a></li><li class="active"><a href="#">1</a></li><li><a href="#">2</a></li><li><a href="#">3</a></li><li><a href="#">4</a></li><li><a href="#">5</a></li><li class="next"><a href="#">Следующая → </a></li></ul></div>
                                     </div>

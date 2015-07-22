@@ -19,6 +19,8 @@
     <link href="js/advanced-datatable/css/demo_table.css" rel="stylesheet" />
     <link rel="stylesheet" href="js/data-tables/DT_bootstrap.css" />
 
+    <link rel="stylesheet" type="text/css" href="js/bootstrap-datepicker/css/datepicker.css" />
+
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style-responsive.css" rel="stylesheet" />
@@ -49,7 +51,9 @@
 <div class="brand">
 
     <a href="index-restaurant.html" class="logo">
-        <img src="images/logo-header.png" alt="">
+        <!-- <img src="images/logo-header.png" alt=""> -->
+        <h1 class="logo--head">наЛанч</h1>
+        <h2 class="logo--subhead">hello, ресторан!</h2>
     </a>
     <div class="sidebar-toggle-box">
         <div class="fa fa-bars"></div>
@@ -232,8 +236,9 @@
                          </span>
                     </header>
                     <div class="panel-body">
-                        <div class="nl-filter-row">
-                            <div class="nl-filter-date">
+                       
+
+                        <div class="col-xs-6">
                                 <div class="form-group">
                                     <label class="control-label tracsations-dates nl-tracsations-dates">Выберите даты</label>
                                     <div class="transaction-range">
@@ -245,23 +250,27 @@
                                         
                                     </div>
                                 </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="dataTables_filter nl-dataTables_filter">
+                                <label for="">
+                                    Поиск <input type="text" class="form-control" aria-controls="dynamic-table">
+                                </label>
                             </div>
-                            <div class="nl-filter-place">
-                                 <div class="align-right nl-dishes-search__tools">
-                                     <button class="btn btn-default dropdown-toggle nl-dishes-tools__toggle" data-toggle="dropdown">Отправить<i class="fa fa-angle-down"></i>
-                                    </button>
-                                    <ul class="dropdown-menu pull-right">
-                                        <li><a href="#">Печать</a></li>
-                                        <li><a href="#">Сохранить как PDF</a></li>
-                                        <li><a href="#">В Excel</a></li>
-                                    </ul>
-                                </div>
-
-                            </div>
+                        </div>
+                        
+                        <div class="col-xs-2 align-right nl-dishes-search__tools">
+                             <button class="btn btn-default dropdown-toggle nl-dishes-tools__toggle" data-toggle="dropdown">Отправить<i class="fa fa-angle-down"></i>
+                            </button>
+                            <ul class="dropdown-menu pull-right">
+                                <li><a href="#">Печать</a></li>
+                                <li><a href="#">Сохранить как PDF</a></li>
+                                <li><a href="#">В Excel</a></li>
+                            </ul>
                         </div>
                     
                     <div class="adv-table">
-                    <table  class="display table table-bordered table-striped" id="dynamic-table">
+                    <table  class="display table table-bordered table-striped">
                     <thead>
                     <tr>
                         <th>Название компании</th>
@@ -269,7 +278,7 @@
                         <th>Время доставки</th>
                         <th class="hidden-phone">Приборы</th>
                         <th class="hidden-phone">Контактное лицо для курьера</th>
-                        <th>оборот за месяц</th>
+                        <th>Оборот за месяц</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -410,10 +419,29 @@
                         <th>Время доставки</th>
                         <th class="hidden-phone">Приборы</th>
                         <th class="hidden-phone">Контактное лицо для курьера</th>
-                        <th>оборот за месяц</th>
+                        <th>Оборот за месяц</th>
                     </tr>
                     </tfoot>
                     </table>
+                    <div class="row nl-pagination">
+                        <div class="col-xs-5">
+                            <div class="dataTables_length">
+                                <label>
+                                    <select size="1" name="editable-sample_length" aria-controls="editable-sample" class="form-control xsmall">
+                                    <option value="5">20</option>
+                                    <option value="15" selected="selected">50</option>
+                                    <option value="20">100</option>
+                                    <option value="-1">Все</option>
+                                    </select> на&nbsp;странице
+                                </label>
+                            </div>
+                            <div class="dataTables_info">Показано 1 по 5 из 28</div>
+                        </div>
+                        
+                        <div class="col-xs-7">
+                            <div class="dataTables_paginate paging_bootstrap pagination"><ul><li class="prev disabled"><a href="#">← Предыдущая</a></li><li class="active"><a href="#">1</a></li><li><a href="#">2</a></li><li><a href="#">3</a></li><li><a href="#">4</a></li><li><a href="#">5</a></li><li class="next"><a href="#">Следующая → </a></li></ul></div>
+                        </div>
+                    </div>
                     </div>
                     </div>
                 </section>

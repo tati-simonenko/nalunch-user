@@ -19,10 +19,6 @@
     <link rel="stylesheet" type="text/css" href="js/bootstrap-wysihtml5/bootstrap-wysihtml5.css" />
 
     <link rel="stylesheet" type="text/css" href="js/bootstrap-datepicker/css/datepicker.css" />
-    <link rel="stylesheet" type="text/css" href="js/bootstrap-timepicker/css/timepicker.css" />
-    <link rel="stylesheet" type="text/css" href="js/bootstrap-colorpicker/css/colorpicker.css" />
-    <link rel="stylesheet" type="text/css" href="js/bootstrap-daterangepicker/daterangepicker-bs3.css" />
-    <link rel="stylesheet" type="text/css" href="js/bootstrap-datetimepicker/css/datetimepicker.css" />
 
     <link rel="stylesheet" type="text/css" href="js/jquery-multi-select/css/multi-select.css" />
     <link rel="stylesheet" type="text/css" href="js/jquery-tags-input/jquery.tagsinput.css" />
@@ -59,7 +55,9 @@
 <div class="brand">
 
     <a href="index-restaurant.html" class="logo">
-        <img src="images/logo-header.png" alt="">
+        <!-- <img src="images/logo-header.png" alt=""> -->
+        <h1 class="logo--head">наЛанч</h1>
+        <h2 class="logo--subhead">hello, ресторан!</h2>
     </a>
     <div class="sidebar-toggle-box">
         <div class="fa fa-bars"></div>
@@ -292,9 +290,18 @@
                     <div class="panel-body">
                         <div class="adv-table">
                             <div class="row">
-                                <div class="col-xs-9">
+                                <div class="col-xs-6">
+                                    
                                 </div>
-                                <div class="col-xs-3 align-right nl-dishes-search__tools">
+                                <div class="col-xs-4">
+                                    <div class="dataTables_filter nl-dataTables_filter">
+                                        <label for="">
+                                            Поиск <input type="text" class="form-control" aria-controls="dynamic-table">
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-xs-2 align-right nl-dishes-search__tools">
                                      <button class="btn btn-default dropdown-toggle nl-dishes-tools__toggle" data-toggle="dropdown">Отправить<i class="fa fa-angle-down"></i>
                                     </button>
                                     <ul class="dropdown-menu pull-right">
@@ -304,7 +311,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <table  class="display table table-bordered table-striped" id="dynamic-table">
+                            <table  class="display table table-bordered table-striped">
                                 <thead>
                                     <tr>
                                         <th>Заведения</th>
@@ -473,6 +480,25 @@
                                     </tr>
                                 </tfoot>
                             </table>
+                            <div class="row nl-pagination">
+                                <div class="col-xs-5">
+                                    <div class="dataTables_length">
+                                        <label>
+                                            <select size="1" name="editable-sample_length" aria-controls="editable-sample" class="form-control xsmall">
+                                            <option value="5">20</option>
+                                            <option value="15" selected="selected">50</option>
+                                            <option value="20">100</option>
+                                            <option value="-1">Все</option>
+                                            </select> на&nbsp;странице
+                                        </label>
+                                    </div>
+                                    <div class="dataTables_info">Показано 1 по 5 из 28</div>
+                                </div>
+                                
+                                <div class="col-xs-7">
+                                    <div class="dataTables_paginate paging_bootstrap pagination"><ul><li class="prev disabled"><a href="#">← Предыдущая</a></li><li class="active"><a href="#">1</a></li><li><a href="#">2</a></li><li><a href="#">3</a></li><li><a href="#">4</a></li><li><a href="#">5</a></li><li class="next"><a href="#">Следующая → </a></li></ul></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -656,11 +682,6 @@
 
 <script src="js/bootstrap-switch.js"></script>
 
-<script type="text/javascript" src="js/fuelux/js/spinner.min.js"></script>
-<script type="text/javascript" src="js/bootstrap-fileupload/bootstrap-fileupload.js"></script>
-<script type="text/javascript" src="js/bootstrap-wysihtml5/wysihtml5-0.3.0.js"></script>
-<script type="text/javascript" src="js/bootstrap-wysihtml5/bootstrap-wysihtml5.js"></script>
-
 <script type="text/javascript" src="js/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
 <script type="text/javascript" src="js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
 <script type="text/javascript" src="js/bootstrap-daterangepicker/moment.min.js"></script>
@@ -678,27 +699,12 @@
 <script src="js/select2/select2.js"></script>
 <script src="js/select-init.js"></script>
 
-<script type="text/javascript" language="javascript" src="js/advanced-datatable/js/jquery.dataTables.js"></script>
-<script type="text/javascript" src="js/data-tables/DT_bootstrap.js"></script>
-
-
 <!--common script init for all pages-->
 <script src="js/scripts.js"></script>
 
 <script src="js/toggle-init.js"></script>
 
 <script src="js/advanced-form.js"></script>
-<!--Easy Pie Chart-->
-<script src="js/easypiechart/jquery.easypiechart.js"></script>
-<!--Sparkline Chart-->
-<script src="js/sparkline/jquery.sparkline.js"></script>
-<!--jQuery Flot Chart-->
-<script src="js/flot-chart/jquery.flot.js"></script>
-<script src="js/flot-chart/jquery.flot.tooltip.min.js"></script>
-<script src="js/flot-chart/jquery.flot.resize.js"></script>
-<script src="js/flot-chart/jquery.flot.pie.resize.js"></script>
-
-<script src="js/dynamic_table_init.js"></script>
 
 </body>
 </html>

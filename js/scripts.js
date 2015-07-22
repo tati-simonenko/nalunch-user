@@ -294,11 +294,18 @@
 
 $( document ).ready(function() {
 
+
+
     $(".nl-btn-menu").click(function(){
         $(this).parent().find(".nl-table-menu").toggleClass("nl-js-display-none").animate(300);
     });
     
     $(".nl-places-select input.search-input").attr("placeholder","поиск");
+
+    // dashboard rub
+    $("#graph-area text").css("font-size","10px");
+    $("#graph-area text tspan").append(document.createTextNode(" P"));
+
 
     $('.nl-js-chart tspan:contains("2012")').text('Июнь');
     $('.nl-js-chart tspan:contains("2011")').text('Май');
@@ -316,6 +323,12 @@ $( document ).ready(function() {
 
 
 $( document ).ready(function() {
+
+    // lets choose all checkboxes
+
+    $('thead th input[type=checkbox]').click(function() {
+        $(this).closest('table').find(':checkbox').prop('checked',this.checked);
+    });
 
     // Показываем окошко успеха при нажатии на кнопку Подтвердить
 

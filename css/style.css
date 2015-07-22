@@ -2836,6 +2836,7 @@ ul.amounts li {
 }
 .dataTables_length label,.dataTables_filter label {
     font-weight:300;
+    font-size: 13px;
 }
 .dataTables_filter label {
     width:100%;
@@ -3214,7 +3215,7 @@ input:focus:invalid:focus,textarea:focus:invalid:focus,select:focus:invalid:focu
     padding-top:8px;
 }
 .daterangepicker td.active,.daterangepicker td.active:hover,.datepicker td.active:hover,.datepicker td.active:hover:hover,.datepicker td.active:active,.datepicker td.active:hover:active,.datepicker td.active.active,.datepicker td.active.active:hover,.datepicker td.active.disabled,.datepicker td.active.disabled:hover,.datepicker td.active[disabled],.datepicker td.active[disabled]:hover,.datepicker td span.active:hover,.datepicker td span.active:active,.datepicker td span.active.active,.datepicker td span.active.disabled,.datepicker td span.active[disabled] {
-    background:#ef9d26;
+    background:#ef9d26!important;
 }
 .daterangepicker .calendar th,.daterangepicker .calendar td {
     font-family:'Open Sans',sans-serif;
@@ -5980,16 +5981,6 @@ select.form-control:focus {
     border: 1px solid #ef9d26;
 }
 
-/*special for dishes*/
-
-.nl-dishes .col-lg-6:nth-child(1) {
-    position: static;
-}
-.nl-dishes .dataTables_length {
-  bottom: 47px;
-  z-index: 2;
-}
-
 /*рабочий стол*/
 
 .nl-mini-stat .mini-stat { min-height: 120px; }
@@ -6025,6 +6016,14 @@ select.form-control:focus {
 .nl-dishes-search .dataTables_filter label input { width: 84%; }
 /*#main-content .nl-dishes > .clearfix { display: none !important; }
 */.nl-pagination .dataTables_length { padding: 11px 0; }
+.nl-pagination--archive { background-color: #fff; margin: 0; }
+.nl-pagination--archive .dataTables_length select {
+    display: inline-block;
+}
+.nl-pagination--archive .dataTables_info {
+    padding: 15px 0;
+}
+.nl-pagination--archive .dataTables_paginate.paging_bootstrap.pagination { margin-bottom: 0; }
 .nl-dishes-search__tools .nl-dishes-tools__toggle { display: inline-block; }
 .nl-dishes-search__tools .nl-dishes-tools__toggle i { margin-left: 7px; }
 
@@ -6182,9 +6181,20 @@ p.nl-places-select__title { margin-bottom: 10px; }
 
 /*order*/
 
-.nl-tab-bg-dark-navy-blue li a:hover, .nl-tab-bg-dark-navy-blue li.active a {
-    color: #57c8f1!important;
+.nl-panel-tabs {
+    padding-top: 20px;
+    background-color: #F1F2F7;
 }
+
+.nl-tab-bg-dark-navy-blue li a:hover, .nl-tab-bg-dark-navy-blue li.active a {
+    color: #000!important;
+    background: #3DC9F8 !important;
+}
+.nl-tab-bg-dark-navy-blue {
+    background: #C7CAD8 !important;
+ }
+.nl-tab-bg-dark-navy-blue li.active a { border-bottom-color: #3DC9F8!important;}
+.nl-tab-bg-dark-navy-blue li.active a:hover { border-bottom-color: #3DC9F8!important;}
 .nl-alert-warning, .nl-alert-warning strong { color: #a94442;}
 .nl-alert-warning h5 { margin-bottom: 0; margin-top: 0; }
 .nl-alert-warning strong { font-size: 11px; }
@@ -6204,25 +6214,24 @@ p.nl-places-select__title { margin-bottom: 10px; }
     text-transform: none;
     margin-bottom: 0;
  }
+ .nl-order-tab-pane .nl-filter-place .nl-archive-dataTables_filter { width: 100%; }
  .nl-order-tab-pane .nl-icon-up { margin-right: 15px; }
 .nl-order-archive-item .table-invoice { margin-top: 0; }
 .nl-archive-dataTables_filter { width: 100%; float: none; padding-top: 0; }
 .nl-archive-dataTables_filter input { display: inline-block; margin-left: 20px; width: 84%; }
 .nl-order-filter .panel-heading { font-weight: normal; text-transform: none; color: #767676;}
 .nl-order-archive-item .fa-chevron-up { opacity: 0.35; }
+.nl-order-archive-item { background-color: #F1F2F7; }
+.nl-order-archive-item .panel {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 /*clients*/
 
-.clients-by-company .dataTables_filter {
-      position: absolute;
-  top: -70px;
-  right: 190px;
-  width: 380px;
-}
-
-.clients-by-company .dataTables_length {
-    position: absolute;
-  bottom: -95px;
+.clients-by-company .nl-dataTables_filter input {
+    display: inline-block;
+    margin-left: 10px;
 }
 
 .toggle-right-box .fa-bars:before {
@@ -6252,6 +6261,17 @@ p.nl-places-select__title { margin-bottom: 10px; }
 .nl-user-transactions tr td:nth-child(6),
 .nl-user-transactions tr th:nth-child(6) {
     width: 140px !important;
+}
+.nl-user__order-table td:nth-child(1) {
+    width: 285px;
+    max-width: 285px;
+}
+.nl-user__order-table td:nth-child(2) {
+    width: 80px;
+    max-width: 80px;
+}
+.nl-user__order-table td {
+    vertical-align: middle!important;
 }
 
 .nl-user__order-table td i {
@@ -6370,7 +6390,10 @@ p.nl-places-select__title { margin-bottom: 10px; }
 }
 .nl-btn-add-cart {
     margin-top: 40px;
-    padding: 12px; 
+    padding: 12px 37px;
+}
+.nl-btn-add-cart:focus {
+    outline-width: 0;
 }
 
 .nl-user-table__align-right { text-align: left;}
