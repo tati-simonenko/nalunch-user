@@ -14,10 +14,16 @@
     <link href="css/bootstrap-reset.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
 
+    <link href="js/iCheck/skins/square/square.css" rel="stylesheet">
+    <link href="js/iCheck/skins/square/green.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="js/bootstrap-fileupload/bootstrap-fileupload.css" />
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="font-awesome/4.3.0/css/font-awesome.min.css">
 
+    <link rel="stylesheet" type="text/css" href="js/jquery-multi-select/css/multi-select.css" />
+    <link rel="stylesheet" type="text/css" href="js/jquery-tags-input/jquery.tagsinput.css" />
+
+    <link rel="stylesheet" type="text/css" href="js/select2/select2.css" />
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style-responsive.css" rel="stylesheet" />
@@ -212,88 +218,521 @@
                     <header class="tab-bg-dark-navy-blue">
                         <ul class="nav nav-tabs nav-justified ">
                             <li class="active">
-                                <a data-toggle="tab" href="#overview">
-                                    Общие сведения
+                                <a data-toggle="tab" href="#contacts">
+                                    Контактные данные
                                 </a>
                             </li>
                             <li>
-                                <a data-toggle="tab" href="#job-history">
+                                <a data-toggle="tab" href="#info">
                                     Информация о карте
                                 </a>
                             </li>
                             <li>
-                                <a data-toggle="tab" href="#contacts" class="contact-map">
-                                    Уведомления
+                                <a data-toggle="tab" href="#subscribes" class="contact-map">
+                                    Подписки
                                 </a>
                             </li>
-                            <li>
-                                <a data-toggle="tab" href="#settings">
-                                    Обратная связь
-                                </a>
-                            </li>
+                            
                         </ul>
                     </header>
                     <div class="panel-body">
                         <div class="tab-content tasi-tab">
-                            <div id="overview" class="tab-pane active">
+                            <div id="contacts" class="tab-pane active">
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="panel-body">
                                             <p></p>
-                                            <p>Общие сведения</p>
+                                            <form role="form" class="form-horizontal">
+                                                <p>&nbsp;</p>
+                                                
+                                                <div class="form-group">
+                                                    <label class="col-lg-2 control-label">Имя</label>
+                                                    <div class="col-lg-4">
+                                                        <input type="text" placeholder=" " id="name" class="form-control" value="Иван">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-lg-2 control-label">Фамилия</label>
+                                                    <div class="col-lg-4">
+                                                        <input type="text" placeholder=" " id="surname" class="form-control" value="Голубев">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-lg-2 control-label">Отчество</label>
+                                                    <div class="col-lg-4">
+                                                        <input type="text" placeholder=" " id="secondname" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-lg-2 control-label">Телефон</label>
+                                                    <div class="col-lg-4">
+                                                        <input type="text" placeholder=" " id="tel" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-lg-2 control-label">e-mail</label>
+                                                    <div class="col-lg-4">
+                                                        <input type="text" placeholder=" " id="phone" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-lg-offset-2 col-lg-9">
+                                                        <button class="btn btn-primary" type="submit">Сохранить</button>
+                                                    </div>
+                                                </div>
+
+                                                
+
+                                            </form>
+                                            <form role="form" class="form-horizontal">
+                                                <p>&nbsp;</p>
+
+                                                <div class="form-group">
+                                                    <label class="col-lg-2 control-label">Старый пароль</label>
+                                                    <div class="col-lg-4">
+                                                        <input type="text" placeholder=" " id="skype" class="form-control">
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="form-group">
+                                                    <label class="col-lg-2 control-label">Новый пароль</label>
+                                                    <div class="col-lg-4">
+                                                        <input type="text" placeholder=" " id="email" class="form-control">
+                                                    </div>
+                                                </div>
+                                                
+
+                                                <div class="form-group">
+                                                    <div class="col-lg-offset-2 col-lg-9">
+                                                        <button class="btn btn-primary" type="submit">Поменять</button>
+                                                    </div>
+                                                </div>
+
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div id="job-history" class="tab-pane ">
+                            <div id="info" class="tab-pane">
+                                <p>кейс К</p>
+                                <!-- кейс К -->
                                 <div class="row">
                                     <div class="col-md-12">
                                         <p></p>
-                                        <p>Информация о карте</p>
+                                        <table class="table table-hover nl-table__user-profile--info">
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="2">Общая информация</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <!-- Общая информация -->
+                                                <tr class="">
+                                                    <td>Номер карты</td>
+                                                    <td>572634 37469731</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Размер компенсации</td>
+                                                    <td>200&nbsp;<i class="fa fa-rub"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Правила начисления</td>
+                                                    <td>неделя</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Максимальный перерасход</td>
+                                                    <td>700&nbsp;<i class="fa fa-rub"></i> в день</td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td>Последнее пополнение</td>
+                                                    <td>01.07.2015 15:02</td>
+                                                </tr>
+                                               
+                                                
+                                            </tbody>
+                                        </table>
+
+                                        <table class="table table-hover nl-table__user-profile--info">
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="2">Установленные работодателем опции</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <!-- Установленные работодателем опции  -->
+                                                <tr class="">
+                                                    <td>Работа карты в выходные дни</td>
+                                                    <th><span class="label label-success label-mini">да</span></th>
+                                                </tr>
+                                                <tr class="">
+                                                    <td>Компенсация в выходные дни</td>
+                                                    <th><span class="label label-warning label-mini">нет</span></th>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td>Запрещено питание работодателем</td>
+                                                    <td>с 20.12.2015 по 13.01.2016</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Ограничение работы карты по времени
+                                                        <p class="text-muted">Вы можете использовать карту в указанное время. Ограничения установил ваш работодатель.</p>
+                                                    </td>
+                                                    <td>с 12:00 до 16:00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Ограничение компенсации по времени
+                                                        <p class="text-muted">Работодатель компенсирует питание в указанное время. Перерасход невозможен, так как у вас не привязана банковская карта. Вы можете привязать ее в профиле.</p>
+                                                    </td>
+                                                    <td>с 12:00 до 16:00</td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
-                            </div>
-                            <div id="contacts" class="tab-pane ">
+                                <!-- конец кейса К -->
+
+                                <!-- кейс Клс пополнение -->
+                                <p>кейс Клс пополнение</p>
                                 <div class="row">
                                     <div class="col-md-12">
                                         <p></p>
-                                        <p>Уведомления</p>
+                                        <table class="table table-hover nl-table__user-profile--info">
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="2">Общая информация</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <!-- Общая информация -->
+                                                <tr class="">
+                                                    <td>Номер карты</td>
+                                                    <td>572634 37469731</td>
+                                                </tr>
+                                               <tr>
+                                                    <td>
+                                                        Размер компенсации
+                                                        <p class="text-muted">В первую очередь списывается размер компенсации, затем ваши личные средства</p>
+                                                    </td>
+                                                    <td>200&nbsp;<i class="fa fa-rub"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Правила начисления</td>
+                                                    <td>неделя</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Последнее пополнение <p class="text-muted">Работодателем</p></td>
+                                                    <td>01.07.2015 15:02</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table class="table table-hover nl-table__user-profile--info">
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="2">Услуга "Личный счет"</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="">
+                                                    <td>Баланс ваших личных средств</td>
+                                                    <td>2 500&nbsp;<i class="fa fa-rub"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Последнее пополнение 
+                                                        <p class="text-muted">Ваших личных средств</p>
+                                                    </td>
+                                                    <td>01.07.2015 15:02</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+
+                                        <table class="table table-hover nl-table__user-profile--info">
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="2">Установленные работодателем опции</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <!-- Установленные работодателем опции  -->
+                                                <tr class="">
+                                                    <td>Работа карты в выходные дни</td>
+                                                    <th><span class="label label-success label-mini">да</span></th>
+                                                </tr>
+                                                <tr class="">
+                                                    <td>Компенсация в выходные дни</td>
+                                                    <th><span class="label label-warning label-mini">нет</span></th>
+                                                </tr>
+                                                <tr>
+                                                    <td>Не компенсируется питание работодателем</td>
+                                                    <td>с 20.12.2015 по 13.01.2016</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Ограничение компенсации по времени
+                                                        <p class="text-muted">Работодатель компенсирует питание в указанное время. В остальное время вы можете использовать личные средства.</p>
+                                                    </td>
+                                                    <td>с 12:00 до 16:00</td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!-- конец кейса Клс пополнение -->
+
+
+                                <!-- кейс Клс убер -->
+                                <p>кейс Клс убер</p>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p></p>
+                                        <table class="table table-hover nl-table__user-profile--info">
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="2">Общая информация</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <!-- Общая информация -->
+                                                <tr class="">
+                                                    <td>Номер карты</td>
+                                                    <td>572634 37469731</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Размер компенсации
+                                                        <p class="text-muted">В первую очередь списывается размер компенсации, затем ваши личные средства</p>
+                                                    </td>
+                                                    <td>200&nbsp;<i class="fa fa-rub"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Правила начисления</td>
+                                                    <td>неделя</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Последнее пополнение
+                                                        <p class="text-muted">Работодателем</p>
+                                                    </td>
+                                                    <td>01.07.2015 15:02</td>
+                                                </tr>
+                                               
+                                                
+                                            </tbody>
+                                        </table>
+
+                                        <table class="table table-hover nl-table__user-profile--info">
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="2">Установленные работодателем опции</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <!-- Установленные работодателем опции  -->
+                                                <tr class="">
+                                                    <td>Работа карты в выходные дни</td>
+                                                    <th><span class="label label-success label-mini">да</span></th>
+                                                </tr>
+                                                <tr class="">
+                                                    <td>Компенсация в выходные дни</td>
+                                                    <th><span class="label label-warning label-mini">нет</span></th>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td>Не компенсируется питание работодателем</td>
+                                                    <td>с 20.12.2015 по 13.01.2016</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Ограничение компенсации по времени
+                                                        <p class="text-muted">Работодатель компенсирует питание в указанное время. В остальное время вы можете использовать личные средства.</p>
+                                                    </td>
+                                                    <td>с 12:00 до 16:00</td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <!-- конец кейс Клс убер -->
+
+                                <!-- кейс физик пополнение -->
+
+                                <p>кейс физик пополнение</p>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p></p>
+                                        
+
+                                        <table class="table table-hover nl-table__user-profile--info">
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="2">Общая информация</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="">
+                                                    <td>Услуга "Личный счет"</td>
+                                                    <th><span class="label label-success label-mini">активирована</span></th>
+                                                </tr>
+                                                <tr class="">
+                                                    <td>Номер карты</td>
+                                                    <td>572634 37469731</td>
+                                                </tr>
+                                                <tr class="">
+                                                    <td>Баланс ваших личных средств</td>
+                                                    <td>2 500&nbsp;<i class="fa fa-rub"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Потрачено в этом месяце</td>
+                                                    <td>200 <i class="fa fa-rub"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Последнее пополнение 
+                                                    </td>
+                                                    <td>01.07.2015 15:02</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <!-- конец кейса физик пополнение -->
+
+                                <!-- кейс физик убер -->
+
+                                <p>кейс физик убер</p>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p></p>
+                                        
+
+                                        <table class="table table-hover nl-table__user-profile--info">
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="2">Общая информация</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="">
+                                                    <td>Услуга "Личный счет"</td>
+                                                    <th><span class="label label-success label-mini">активирована</span></th>
+                                                </tr>
+                                                <tr class="">
+                                                    <td>Номер карты</td>
+                                                    <td>572634 37469731</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Потрачено в этом месяце</td>
+                                                    <td>200 <i class="fa fa-rub"></i></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <!-- конец кейса физик убер -->
+
+
+                            </div>
+                            <div id="subscribes" class="tab-pane ">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p></p>
+                                        <table class="table table-hover nl-table__user-profile--subscribes">
+                                            <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="">
+                                                    <td>Получение смс о пополнении карты</td>
+                                                    <td class="icheck">
+                                                        <div class="square-green single-row">
+                                                            <div class="checkbox ">
+                                                                <input type="checkbox" >
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="">
+                                                    <td>Получение смс о списании средств с карты </td>
+                                                    <td class="icheck">
+                                                        <div class="square-green single-row">
+                                                            <div class="checkbox ">
+                                                                <input type="checkbox" >
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="">
+                                                    <td>
+                                                        Получение смс о приближении к минимальному балансу (500&nbsp;<i class="fa fa-rub"></i>)</td>
+                                                    <td class="icheck">
+                                                        <div class="square-green single-row">
+                                                            <div class="checkbox ">
+                                                                <input type="checkbox" >
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="">
+                                                    <td>Получение имейл уведомлений и добавлении новости на сайте</td>
+                                                    <td class="icheck">
+                                                        <div class="square-green single-row">
+                                                            <div class="checkbox ">
+                                                                <input type="checkbox" >
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="nl-row__user--restaurants">
+                                                    <td>Получение смс увед об акциях ресторанов</td>
+                                                    <td class="icheck">
+                                                        <div class="square-green single-row">
+                                                            <div class="checkbox ">
+                                                                <input type="checkbox" checked>
+                                                            </div>
+                                                        </div>
+                                                        <a href="">Хочу призы не от всех ресторанов</a>
+                                                        <!-- выбор ресторанов -->
+                                                        <div class="form-group">
+                                                            <select multiple name="e9" id="e9" style="width:300px" class="populate nl-select__user--restaurants">
+                                                                <option value="p65">Pizza Ollis, Большой пр ПС, 65</option>
+                                                                <option value="p66">Pizza Ollis, Большой пр ПС, 66</option>
+                                                                <option value="p67">Pizza Ollis, Большой пр ПС, 67</option>
+                                                                <option value="p68">Pizza Ollis, Большой пр ПС, 68</option>
+                                                                <option value="p69">Pizza Ollis, Большой пр ПС, 69</option>
+                                                                <option value="p70">Mama Roma, Большой пр ПС, 70</option>
+                                                                <option value="p71">Pizza Ollis, Большой пр ПС, 71</option>
+                                                            </select>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                
+                                                
+                                            </tbody>
+                                        </table>
+                                        <div class="form-group">
+                                            <div class="col-lg-9">
+                                                <button class="btn btn-primary" type="submit">Сохранить</button>
+                                            </div>
+                                        </div>
                                     </div>
                                     
                                 </div>
                             </div>
-                            <div id="settings" class="tab-pane ">
-                                <div class="">
-                                    
-                                    <div class="prf-contacts sttng">
-                                        
-                                    </div>
-                                    <form role="form" class="form-horizontal">
-                                        <p>&nbsp;</p>
-                                        
-                                        <div class="form-group">
-                                            <label class="col-lg-2 control-label">Новый пароль</label>
-                                            <div class="col-lg-4">
-                                                <input type="text" placeholder=" " id="email" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-lg-2 control-label">Старый пароль</label>
-                                            <div class="col-lg-4">
-                                                <input type="text" placeholder=" " id="skype" class="form-control">
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <div class="col-lg-offset-2 col-lg-9">
-                                                <button class="btn btn-primary" type="submit">Поменять</button>
-                                            </div>
-                                        </div>
-
-                                    </form>
-                                </div>
-
-                            </div>
+                            
                         </div>
                     </div>
                 </section>
@@ -469,52 +908,29 @@
 
 <script type="text/javascript" src="js/bootstrap-fileupload/bootstrap-fileupload.js"></script>
 
+
+
+<script src="js/iCheck/jquery.icheck.js"></script>
+
+<script type="text/javascript" src="js/ckeditor/ckeditor.js"></script>
+
 <!--common script init for all pages-->
 <script src="js/scripts.js"></script>
-<script>
 
-    //google map
-    function initialize() {
-        var myLatlng = new google.maps.LatLng(-37.815207, 144.963937);
-        var mapOptions = {
-            zoom: 15,
-            scrollwheel: false,
-            center: myLatlng,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-        var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-        var marker = new google.maps.Marker({
-            position: myLatlng,
-            map: map,
-            title: 'Hello World!'
-        });
-    }
-    google.maps.event.addDomListener(window, 'load', initialize);
+<script src="js/icheck-init.js"></script>
 
-$('.contact-map').click(function(){
+<script src="js/bootstrap-switch.js"></script>
+<script type="text/javascript" src="js/fuelux/js/spinner.min.js"></script>
 
-    //google map in tab click initialize
-    function initialize() {
-        var myLatlng = new google.maps.LatLng(-37.815207, 144.963937);
-        var mapOptions = {
-            zoom: 15,
-            scrollwheel: false,
-            center: myLatlng,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-        var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-        var marker = new google.maps.Marker({
-            position: myLatlng,
-            map: map,
-            title: 'Hello World!'
-        });
-    }
-    google.maps.event.addDomListener(window, 'click', initialize);
-});
+<script type="text/javascript" src="js/jquery-multi-select/js/jquery.multi-select.js"></script>
+<script type="text/javascript" src="js/jquery-multi-select/js/jquery.quicksearch.js"></script>
 
-</script>
+<script type="text/javascript" src="js/bootstrap-inputmask/bootstrap-inputmask.min.js"></script>
 
+<script src="js/jquery-tags-input/jquery.tagsinput.js"></script>
 
+<script src="js/select2/select2.js"></script>
+<script src="js/select-init.js"></script>
 
 </body>
 </html>
