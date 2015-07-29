@@ -8,33 +8,11 @@
     <meta name="author" content="ThemeBucket">
     <link rel="shortcut icon" href="images/favicon.png">
 
-    <title>наЛанч: Детальный отчет о транзакциях</title>
-
+    <title>Наланч: Баллы</title>
     <!--Core CSS -->
     <link href="bs3/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-reset.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
-
-    <link rel="stylesheet" href="css/bootstrap-switch.css" />
-    <link rel="stylesheet" type="text/css" href="js/bootstrap-fileupload/bootstrap-fileupload.css" />
-    <link rel="stylesheet" type="text/css" href="js/bootstrap-wysihtml5/bootstrap-wysihtml5.css" />
-
-    <link rel="stylesheet" type="text/css" href="js/bootstrap-datepicker/css/datepicker.css" />
-    <link rel="stylesheet" type="text/css" href="js/bootstrap-timepicker/css/timepicker.css" />
-    <link rel="stylesheet" type="text/css" href="js/bootstrap-colorpicker/css/colorpicker.css" />
-    <link rel="stylesheet" type="text/css" href="js/bootstrap-daterangepicker/daterangepicker-bs3.css" />
-    <link rel="stylesheet" type="text/css" href="js/bootstrap-datetimepicker/css/datetimepicker.css" />
-
-    <link rel="stylesheet" type="text/css" href="js/jquery-multi-select/css/multi-select.css" />
-    <link rel="stylesheet" type="text/css" href="js/jquery-tags-input/jquery.tagsinput.css" />
-
-    <link rel="stylesheet" type="text/css" href="js/select2/select2.css" />
-
-    <!--dynamic table-->
-    <link href="js/advanced-datatable/css/demo_page.css" rel="stylesheet" />
-    <link href="js/advanced-datatable/css/demo_table.css" rel="stylesheet" />
-    <link rel="stylesheet" href="js/data-tables/DT_bootstrap.css" />
-
 
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
@@ -75,6 +53,7 @@
     <button class="btn btn-round btn-pale">Пополнить баланс</button>
     <!--  notification end -->
 </div>
+
 <div class="top-nav clearfix">
     <!--search & user info start-->
     <ul class="nav pull-right top-menu">
@@ -97,6 +76,7 @@
         <li>
             <div class="toggle-right-box">
                 <div class="fa fa-bars"></div>
+                <span class="badge bg-important">3</span>
             </div>
         </li>
     </ul>
@@ -108,28 +88,28 @@
     <div id="sidebar" class="nav-collapse">
         <!-- sidebar menu start-->
         <div class="leftside-navigation">
-           <ul class="sidebar-menu" id="nav-accordion">
+            <ul class="sidebar-menu" id="nav-accordion">
                 <li>
-                    <a href="index-user.html">
+                    <a href="index-user.html" >
                         <i class="fa fa-dashboard"></i>
                         <span>Рабочий стол</span>
                     </a>
                 </li>
 
                 <li>
-                    <a class="active sub-menu">
+                    <a class="sub-menu">
                         <i class="fa fa-rouble"></i>
                         <span>Транзакции</span>
                     </a>
                     <ul class="sub">
                         <li><a href="report-detail.html">Детальный отчет</a></li>
-                        <li class="active"><a href="report-places.html">Отчет по ресторанам</a></li>
+                        <li><a href="report-places.html">Отчет по ресторанам</a></li>
                         <li><a href="report-delivery.html">Отчет по доставке</a></li>
                     </ul>
                 </li>
 
                 <li>
-                    <a href="points.html">
+                    <a href="points.html" class="active">
                         <i class="fa fa-star"></i>
                         <span>Мои баллы</span>
                     </a>
@@ -141,8 +121,8 @@
                         <span>Доставка</span>
                     </a>
                     <ul class="sub">
-                        <li><a href="make-order.html">Заказ</a></li>
-                        <li><a href="order-history.html">История заказов</a></li>
+                        <li><a href="make-order.html">Сделать заказ</a></li>
+                        <li><a href="order-history.html">Мои заказы</a></li>
                     </ul>
                 </li>
 
@@ -153,7 +133,7 @@
                     </a>
                 </li>
                 
-            </ul>          
+            </ul>            
         </div>
         <!-- sidebar menu end-->
     </div>
@@ -161,154 +141,20 @@
 <!--sidebar end-->
     <!--main content start-->
     <section id="main-content">
-        <section class="wrapper">
+        <section class="page404">
         <!-- page start-->
+                    <div class="area404">
+                        <p class="text-404">404</p>
+                        <p>Мы не знаем <del>ничего</del> что произошло. <br>
+                        Если это важно, напишите нам на <a href="mailto:support@nalunch.ru">support@nalunch.ru</a>
+                        </p>
+                        <span><a href="http://knowyourmeme.com/memes/you-know-nothing-jon-snow" target="_blank">кто этот мужик?</a></span>
+                        <!-- <img src="img/not-found.jpg" alt=""> -->
+                    </div>
+                    
 
-        <section class="panel">
-            <header class="panel-heading">
-                Фильтр по транзакциям
-                <span class="tools pull-right">
-                    <a class="fa fa-chevron-up"></a>
-                 </span>
-            </header>
-            <div class="panel-body">
-                <div class="nl-filter-row">
-                    <div class="nl-filter-date">
-                        <div class="form-group">
-                            <label class="control-label tracsations-dates nl-tracsations-dates">Выберите даты</label>
-                            <div class="transaction-range">
-                                <div class="input-group input-large " data-date="13.07.2013" data-date-format="dd.mm.yyyy">
-                                    <input type="text" class="form-control dpd1" name="from" value="01.07.2015">
-                                    <span class="input-group-addon">по</span>
-                                    <input type="text" class="form-control dpd2" name="to" value="31.07.2015">
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="nl-filter-place text-left">
-                        <div class="nl-select-group">
-                            <select id="e1" class="nl-select nl-select-basic">
-                                <option >Показать все заведения</option>
-                                <option value="">"Pizza Ollis", Кронверкский пр. д. 61/28&nbsp;</option>
-                                <option value="">"Mama Roma", Чкаловский, 15&nbsp;</option>
-                                <option value="">Бар "Dacha", Рубинштейна,27&nbsp;</option>
-                            </select>
-                        </div>
-                       
-                    </div>
-                </div>
-                <div class="row">&nbsp;</div>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <button type="button" class="btn btn-warning">Фильтровать</button>
-                        <a href="" class="nl-btn-drop text-muted">Сбросить</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="row">
-            <div class="col-sm-12">
-                <section class="panel">
-                    <header class="panel-heading">
-                        Детальный отчет по заведениям
-                        <span class="tools pull-right">
-                            <a class="fa fa-chevron-down"></a>
-                         </span>
-                    </header>
-                    <div class="panel-body">
-
-                    <div class="adv-table">
-                        <div class="row">
-                            <div class="col-xs-6">
-                                    
-                            </div>
-                            <div class="col-xs-4">
-                                <div class="dataTables_filter nl-dataTables_filter">
-                                    <label for="">
-                                        Поиск <input type="text" class="form-control" aria-controls="dynamic-table">
-                                    </label>
-                                </div>
-                            </div>
-                            
-                            <div class="col-xs-2 align-right nl-dishes-search__tools">
-                                 <button class="btn btn-default dropdown-toggle nl-dishes-tools__toggle" data-toggle="dropdown">Отправить<i class="fa fa-angle-down"></i>
-                                </button>
-                                <ul class="dropdown-menu pull-right">
-                                    <li><a href="#">Печать</a></li>
-                                    <li><a href="#">Сохранить как PDF</a></li>
-                                    <li><a href="#">В Excel</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    <table  class="display table table-bordered table-striped nl-report-places">
-                        <thead>
-                            <tr>
-                                <th rowspan="2">Заведение</th>
-                                <th colspan="2" class="text-center">Количество транзакций</th>
-                                <th rowspan="2">Сумма</th>
-                            </tr>
-                            <tr>
-                                <th class="text-center">успешные</th>
-                                <th class="text-center">неудачные</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="">
-                                <td>Всего</td>
-                                <td>55</td>
-                                <td>1</td>
-                                <td>188 906,00р.</td>
-                            </tr>
-                            <tr class="">
-                                <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
-                                <td>31</td>
-                                <td>1</td>
-                                <td>8 906,00р.</td>
-                            </tr>
-                            <tr class="">
-                                <td>"Mama Roma", Средний проспект В.О., 6</td>
-                                <td>25</td>
-                                <td>0</td>
-                                <td>6 505,00р.</td>
-                            </tr>
-                            <tr class="">
-                                <td>"Mama Roma", пр-кт Большой, 70</td>
-                                <td>4</td>
-                                <td>0</td>
-                                <td>500,00р.</td>
-                            </tr>
-                            
-                        </tbody>
-                        
-                    </table>
-                    <div class="row nl-pagination">
-                        <div class="col-xs-5">
-                            <div class="dataTables_length">
-                                <label>
-                                    <select size="1" name="editable-sample_length" aria-controls="editable-sample" class="form-control xsmall">
-                                    <option value="5">20</option>
-                                    <option value="15" selected="selected">50</option>
-                                    <option value="20">100</option>
-                                    <option value="-1">Все</option>
-                                    </select> на&nbsp;странице
-                                </label>
-                            </div>
-                            <div class="dataTables_info">Показано 1 по 5 из 28</div>
-                        </div>
-                        
-                        <div class="col-xs-7">
-                            <div class="dataTables_paginate paging_bootstrap pagination"><ul><li class="prev disabled"><a href="#">← Предыдущая</a></li><li class="active"><a href="#">1</a></li><li><a href="#">2</a></li><li><a href="#">3</a></li><li><a href="#">4</a></li><li><a href="#">5</a></li><li class="next"><a href="#">Следующая → </a></li></ul></div>
-                        </div>
-                    </div>
-                    </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-
-
+        
+            
         <!-- page end-->
         </section>
     </section>
@@ -455,56 +301,18 @@
 
 </div>
 <!--right sidebar end-->
+
 </section>
 
 <!-- Placed js at the end of the document so the pages load faster -->
 
 <!--Core js-->
 <script src="js/jquery.js"></script>
-<script src="js/jquery-1.10.2.min.js"></script>
 <script src="bs3/js/bootstrap.min.js"></script>
-<script src="js/jquery-ui-1.9.2.custom.min.js"></script>
 <script class="include" type="text/javascript" src="js/jquery.dcjqaccordion.2.7.js"></script>
 <script src="js/jquery.scrollTo.min.js"></script>
-<script src="js/easypiechart/jquery.easypiechart.js"></script>
 <script src="js/jQuery-slimScroll-1.3.0/jquery.slimscroll.js"></script>
 <script src="js/jquery.nicescroll.js"></script>
-<script src="js/jquery.nicescroll.js"></script>
-
-<script src="js/bootstrap-switch.js"></script>
-
-<script type="text/javascript" src="js/fuelux/js/spinner.min.js"></script>
-<script type="text/javascript" src="js/bootstrap-fileupload/bootstrap-fileupload.js"></script>
-<script type="text/javascript" src="js/bootstrap-wysihtml5/wysihtml5-0.3.0.js"></script>
-<script type="text/javascript" src="js/bootstrap-wysihtml5/bootstrap-wysihtml5.js"></script>
-
-<script type="text/javascript" src="js/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
-<script type="text/javascript" src="js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
-<script type="text/javascript" src="js/bootstrap-daterangepicker/moment.min.js"></script>
-<script type="text/javascript" src="js/bootstrap-daterangepicker/daterangepicker.js"></script>
-<script type="text/javascript" src="js/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
-<script type="text/javascript" src="js/bootstrap-timepicker/js/bootstrap-timepicker.js"></script>
-
-<script type="text/javascript" src="js/jquery-multi-select/js/jquery.multi-select.js"></script>
-<script type="text/javascript" src="js/jquery-multi-select/js/jquery.quicksearch.js"></script>
-
-<script type="text/javascript" src="js/bootstrap-inputmask/bootstrap-inputmask.min.js"></script>
-
-<script src="js/jquery-tags-input/jquery.tagsinput.js"></script>
-
-<script src="js/select2/select2.js"></script>
-<script src="js/select-init.js"></script>
-
-<script type="text/javascript" language="javascript" src="js/advanced-datatable/js/jquery.dataTables.js"></script>
-<script type="text/javascript" src="js/data-tables/DT_bootstrap.js"></script>
-
-
-<!--common script init for all pages-->
-<script src="js/scripts.js"></script>
-
-<script src="js/toggle-init.js"></script>
-
-<script src="js/advanced-form.js"></script>
 <!--Easy Pie Chart-->
 <script src="js/easypiechart/jquery.easypiechart.js"></script>
 <!--Sparkline Chart-->
@@ -515,7 +323,9 @@
 <script src="js/flot-chart/jquery.flot.resize.js"></script>
 <script src="js/flot-chart/jquery.flot.pie.resize.js"></script>
 
-<script src="js/dynamic_table_init.js"></script>
+
+<!--common script init for all pages-->
+<script src="js/scripts.js"></script>
 
 </body>
 </html>
