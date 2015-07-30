@@ -838,6 +838,9 @@ ul.top-menu>li>a:hover,ul.top-menu>li>a:focus {
     -o-transition:all .3s ease-in-out;
     transition:all .3s ease-in-out;
 }
+.right-sidebar input[type=text] {
+    color: #fff!important;
+}
 .open-right-panel {
     margin-left:-240px !important;
 }
@@ -2407,7 +2410,7 @@ ul.inbox-pagination li {
     padding-right:30px;
 }
 .profile-information .profile-desk h1 {
-    color:#31708f;
+    color:#57c8f1;
     font-size:24px;
     font-weight:bold;
     margin-bottom:0;
@@ -3004,7 +3007,7 @@ ul.amounts li {
     font-size: 14px !important;
 }
 .profile-information--restaurant .tab-bg-dark-navy-blue ul>li>a {
-    font-weight: bold;
+    font-weight: normal;
 }
 .tab-bg-dark-navy-blue {
     background:#e0e1e7 !important;
@@ -3016,7 +3019,6 @@ ul.amounts li {
 .tab-bg-dark-navy-blue li a:hover, .tab-bg-dark-navy-blue li.active a {
     border-radius: 0 !important;
     background: #fff !important;
-    color: #000 !important;
     font-size: 14px !important;
 }
 .profile-information--restaurant .nl-tab-bg-dark-navy-blue li a:hover, 
@@ -6153,6 +6155,11 @@ select.form-control:focus {
   top: 2px;
   right: 7px;
 }
+.nl-table-menu .has-switch .switch-left,
+.nl-table-menu .has-switch .switch-right,
+.nl-table-menu .has-switch label {
+    display: none;
+}
 
 .nl-places-select--clients { margin-bottom: 25px; }
 .nl-places-select--clients .tagsinput { min-height: 35px !important; height: 35px !important; }
@@ -6251,7 +6258,6 @@ p.nl-places-select__title { margin-bottom: 10px; }
 }
 
 .nl-tab-bg-dark-navy-blue li a:hover, .nl-tab-bg-dark-navy-blue li.active a {
-    color: #000!important;
     background: #3DC9F8 !important;
 }
 .nl-tab-bg-dark-navy-blue {
@@ -6483,6 +6489,7 @@ p.nl-places-select__title { margin-bottom: 10px; }
 
 .nl-user__message--success { display: none; }
 .nl-user__message--success h3 { margin-bottom: 20px; }
+.nl-user__message--success a { text-decoration: underline; }
 
 .nl-user__order-table input[type=number] {
     max-width: 60px;
@@ -6543,7 +6550,7 @@ ul.weather-info { padding-left: 80px; }
 
 .profile-information .profile-desk .nl-card-info span { padding-bottom: 7px; }
 .profile-information .profile-desk .profile-desk__mail { padding-bottom: 10px; }
-.nl-card-info a { color: #45a2c9; }
+.nl-card-info a { color: #57c8f1; }
 .nl-card-info span {
     vertical-align: top;
     margin-top: 3px;
@@ -6589,8 +6596,8 @@ table.nl-user-table--points td { line-height: 20px!important; }
     min-height: 700px;
     background-image: url(../images/not-found.jpg);
     background-repeat: no-repeat;
-    -webkit-background-size: contain;
-    background-size: contain;
+    -webkit-background-size: cover;
+    background-size: cover;
     padding-top: 210px;
     
 }
@@ -6616,6 +6623,30 @@ table.nl-user-table--points td { line-height: 20px!important; }
     opacity: .2;
 }
 
+/*tabs*/
+
+.nl-tabs--blue header.nl-tab-bg-dark-navy-blue {
+    background: #F1F2F7!important;
+}
+.nl-tabs--blue__item {
+    display: inline-block!important;
+    vertical-align: top;
+    min-width: 230px!important;
+}
+.nl-tabs--blue ul.nav {
+    font-size: 0;
+}
+.nl-tabs--blue__item a {
+    background-color: #C7CBD6;
+    color: #fff;
+    font-weight: normal !important;
+    border: 0 !important;
+}
+.nl-tabs--blue__item a:hover,
+.nl-tabs--blue__item:hover,
+.nl-tabs--blue__item.active a {
+    color: #fff!important;
+}
 
 
 
