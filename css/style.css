@@ -6484,9 +6484,24 @@ p.nl-places-select__title { margin-bottom: 10px; }
 .nl-user-modal__order {
     z-index: 100000;
 }
-
 .nl-user-modal__order .nl-btn-proove { margin-left: 20px!important; }
+.nl-user__detail-order td:nth-child(1),
+.nl-user__detail-order th:nth-child(1) { width: 110px; } 
+.nl-user__detail-order td:nth-child(2),
+.nl-user__detail-order th:nth-child(2) { width: 210px; } 
+.nl-user__detail-order td:nth-child(3),
+.nl-user__detail-order th:nth-child(3) { width: 66px; } 
+.nl-user__detail-order td:nth-child(4),
+.nl-user__detail-order th:nth-child(4) { width: 77px; } 
+.nl-user__detail-order td:nth-child(5),
+.nl-user__detail-order th:nth-child(5) { width: 112px; } 
+.nl-user__detail-order thead, .nl-user__detail-order tbody { display: block; }
 
+.nl-user__detail-order tbody {
+    max-height: 350px;
+    overflow-y: auto;    /* Trigger vertical scroll    */
+    overflow-x: hidden;  /* Hide the horizontal scroll */
+}
 .nl-user__message--success { display: none; }
 .nl-user__message--success h3 { margin-bottom: 20px; }
 .nl-user__message--success a { text-decoration: underline; }
