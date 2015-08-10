@@ -6136,6 +6136,16 @@ select.form-control:focus {
     
 }
 
+.nl-table__report-detail td:nth-child(1){
+    width: 320px;
+}
+.nl-table__report-detail td:nth-child(4){
+    width: 170px;
+}
+.nl-table__report-detail td:nth-child(5){
+    width: 110px;
+}
+
 /*menu*/
 
 .nl-places-select ul.ms-list { height: 76px !important; }
@@ -6198,6 +6208,7 @@ p.nl-places-select__title { margin-bottom: 10px; }
 }
 .nl-table-profile-conditions {
     width: 50%;
+    min-width: 400px;
 }
 
 /*user profile*/
@@ -6479,7 +6490,23 @@ p.nl-places-select__title { margin-bottom: 10px; }
     outline-width: 0;
 }
 
-.nl-user-table__align-right { text-align: left;}
+.nl-user-table__align-right { text-align: left; margin-bottom: 0; }
+.nl-user-table__day {
+    border-bottom: 1px solid #ddd;
+}
+.nl-user-table__day td {
+    padding: 5px 10px;
+    vertical-align: top !important;
+}
+.nl-user-table__day tr:first-of-type td {
+    padding-top: 10px;
+}
+.nl-user-table__day tr:last-of-type td {
+    padding-bottom: 10px;
+}
+.nl-user-table__day:last-of-type {
+    border-bottom: none;
+}
 
 .nl-user-modal__order {
     z-index: 100000;
