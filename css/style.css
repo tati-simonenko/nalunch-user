@@ -2453,6 +2453,7 @@ ul.inbox-pagination li {
 .profile-information .profile-statistics ul li a:hover {
     color: #1fb5ad;
 }
+
 /*-----*/
 .profile-nav .user-heading {
     color:#fff;
@@ -6198,6 +6199,12 @@ p.nl-places-select__title { margin-bottom: 10px; }
     .nl-dishes-search > div { margin-bottom: 5px; }
 }
 #tags_1_tag { width: 100%; }
+.alert-menu-save {
+    display: inline-block;
+    padding: 8px;
+    margin-top: 15px;
+    vertical-align: top;
+}
 
 /*profile*/
 
@@ -6257,6 +6264,12 @@ p.nl-places-select__title { margin-bottom: 10px; }
 }
 .nl-row__user--restaurants .select2-container-multi.nl-select__user--restaurants  .select2-search-choice-close {
     top: 6px !important;
+}
+.nl-fileupload .fileupload-preview {
+    font-size: 0;
+}
+.nl-card-info i {
+    font-size: 1.8em;
 }
 
 
@@ -6630,8 +6643,10 @@ ul.weather-info { padding-left: 80px; }
 }
 
 .profile-information .profile-desk .nl-card-info span { padding-bottom: 7px; }
-.profile-information .profile-desk .profile-desk__mail { padding-bottom: 10px; }
-.nl-card-info a { color: #57c8f1; }
+.profile-information .profile-desk .profile-desk__mail { padding-bottom: 12px; }
+.nl-card-info .nl-forget { text-decoration: underline; color: #a1a1a1; }
+.nl-save-card { color: #000; padding-left: 20px; padding-right: 20px;}
+.nl-save-card:hover, .nl-save-card:focus, .nl-save-card:active { color: #000; }
 .nl-card-info span {
     vertical-align: top;
     margin-top: 3px;
