@@ -6095,6 +6095,9 @@ select.form-control:focus {
 .dishes-hide {
   display: none;
 }
+.nl-hide {
+    display: none;
+}
 
 .nl-dishes--calendar {
   
@@ -6273,7 +6276,7 @@ p.nl-places-select__title { margin-bottom: 10px; }
     width: 200px;
 }
 .nl-table__user-profile--subscribes {
-    max-width: 650px;
+    max-width: 70%;
 }
 .nl-table__user-profile--subscribes td {
     border-color: transparent!important;
@@ -6282,7 +6285,7 @@ p.nl-places-select__title { margin-bottom: 10px; }
     vertical-align: middle;
 }
 .nl-table__user-profile--subscribes td:nth-child(2) {
-    width: 250px;
+    width: 40%;
 }
 .nl-select__user--restaurants input {
     border: none !important;
@@ -6313,6 +6316,13 @@ p.nl-places-select__title { margin-bottom: 10px; }
 }
 .nl-card-info i {
     font-size: 1.8em;
+}
+.nl-profile-user__notifications--text {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.nl-profile-user__notifications--rest label {
+    display: block;
 }
 
 
