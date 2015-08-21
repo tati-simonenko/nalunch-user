@@ -6092,6 +6092,49 @@ select.form-control:focus {
     display: none;
 }
 
+.dishes-hide {
+  display: none;
+}
+
+.nl-dishes--calendar {
+  
+}
+.nl-dishes--days {
+    position: absolute;
+    top: 5px;
+    right: -176px;
+    z-index: 3;
+    padding-left: 0;
+    background-color: #CED0D1;
+}
+.nl-dishes--days li {
+    background-color: #CED0D1;
+    border: 1px solid #CED0D1;
+    float: left;
+    line-height: 1.42857;
+    margin-left: 1px;
+    padding: 6px 12px;
+    position: relative;
+    text-decoration: none;
+    list-style: none;
+  color: #000;
+  cursor: pointer;
+  
+}
+.nl-dishes td {
+    position: relative;
+    
+}
+.nl-dishes--days .active {
+    background-color: #2eb4ad;
+    border-color: #2eb4ad;
+    color: #fff!important;
+}
+.nl-dishes-rel {
+    /*position: relative;*/
+}
+
+
 /*транзакции*/
 
 .nl-transactions tr td:nth-child(1), .nl-transactions tr th:nth-child(1) { width: 450px !important; }

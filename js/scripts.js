@@ -381,6 +381,37 @@ $( document ).ready(function() {
     }
   });
 
+
+  // dishes page
+
+$(".nl-dishes--calendar").click(function(){
+    $(this).parent().find("ul").toggleClass("dishes-hide");
+  });
+  $("ul li").click(function(){
+    $(this).toggleClass("active");
+  });
+  
+  $('.nl-dishes--calendar').click(function(e) {
+    var $message = $('.nl-dishes--days');
+ 
+    if ($message.css('display') != 'block') {
+        $(this).parent().find('.nl-dishes--days').show();
+ 
+        var firstClick = true;
+        $(document).bind('click.myEvent', function(e) {
+            if (!firstClick && $(e.target).closest('.nl-dishes--days').length == 0) {
+                $message.hide();
+                $(document).unbind('click.myEvent');
+            }
+            firstClick = false;
+        });
+    }
+ 
+    e.preventDefault();
+});
+
+
+
 });
 
 
