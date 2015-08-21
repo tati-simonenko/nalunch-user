@@ -6142,7 +6142,7 @@ select.form-control:focus {
 
 .nl-transactions tr td:nth-child(1), .nl-transactions tr th:nth-child(1) { width: 450px !important; }
 .nl-transactions tr td:nth-child(5), .nl-transactions tr th:nth-child(5) { width: 140px !important; }
-.tracsations-dates { margin-top: 10px; font-size: 14px; font-weight: 400; }
+.tracsations-dates { margin-top: 7px; font-size: 14px; font-weight: 400; line-height: 12px; }
 
 .transaction-range input { padding: 4px 12px !important; }
 .nl-tracsations-dates { padding-left: 1px; }
@@ -6399,6 +6399,86 @@ p.nl-places-select__title { margin-bottom: 10px; }
 /*user*/
 
 /*dashboard*/
+
+.nl-user__toggle-btn {
+    background-color: transparent!important;
+    border: 0;
+}
+.nl-user__toggle-btn div {
+    color: #555554!important;
+}
+.nl-user__toggle-btn div:before {
+    content:""!important;
+}
+
+/*news*/
+
+.nl-user__news--head {
+    margin-top: 15px;
+}
+.nl-user__news {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.nl-user-news__left,
+.nl-user-news__right {
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+}
+.nl-user-news__left img {
+    width: 90%;
+}
+.nl-user-news__title {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.nl-user-news__text {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+.news__info {
+    font-size: 0;
+}
+.news__more, 
+.news__date {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    font-size: 12px;
+}
+.news__more {
+    color: #3c763d;
+    text-decoration: underline;
+}
+.news__more:hover,
+.news__more:active,
+.news__more:focus {
+  color: #3c763d;
+}
+.news__date {
+    text-align: right;
+    font-style: italic;
+}
+.news__map {
+    background-color: #F1F2F7;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    padding: 2px 9px;
+    font-size: 13px;
+}
+.news__map i {
+    margin-right: 3px;
+}
+
+/*___________*/
 
 .nl-weather-widget {
       min-height: 195px;
