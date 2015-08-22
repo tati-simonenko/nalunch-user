@@ -17,7 +17,7 @@
     <link href="js/iCheck/skins/square/square.css" rel="stylesheet">
     <link href="js/iCheck/skins/square/green.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="js/bootstrap-fileupload/bootstrap-fileupload.css" />
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="font-awesome/4.3.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" type="text/css" href="js/jquery-multi-select/css/multi-select.css" />
@@ -60,7 +60,8 @@
 
 <div class="nav notify-row" id="top_menu">
     <!--  notification start -->
-   <button class="toggle-right-box nl-user__toggle-btn"><div class="btn btn-round btn-pale fa fa-bars">Привязать банковскую карту</div></button>
+   <span class="toggle-right-box nl-user__toggle-btn"><div class="btn btn-round btn-pale nl-show-sidebar">Привязать банковскую карту</div></span>
+
             <!-- <div class="toggle-right-box">
                 <div class="fa fa-bars"></div>
                 <span class="badge bg-important">3</span>
@@ -70,9 +71,7 @@
 <div class="top-nav clearfix">
     <!--search & user info start-->
     <ul class="nav pull-right top-menu">
-        <li>
-            <input type="text" class="form-control search" placeholder=" Поиск">
-        </li>
+        
         <!-- user login dropdown start-->
         <li class="dropdown">
             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
@@ -91,7 +90,7 @@
     <!--search & user info end-->
 </div>
 </header>
-<!--header end-->`
+<!--header end-->
 
 
 <!--sidebar start-->
@@ -743,145 +742,21 @@
     </section>
     <!--main content end-->
 <!--right sidebar start-->
-<div class="right-sidebar right-sidebar--user">
-    <div class="search-row">
-        <input type="text" placeholder="Поиск" class="form-control">
+<div class="right-sidebar--user">
+    <div class="nl-close">x</div>
+    <h3 class="text-center">Подключение услуги личный счет</h3>
+    <p>Привяжите банковскую карту к карте наЛанч, чтобы быстро и легко расплачивайться в ресторанах-партнерах и получать скидки.</p>
+    <p>Вы можете подключить услугу, даже если вы корпоративный клиент и ваш работодатель компенсирует ваши затраты на обед. В таком случае компенсация будет списываться в первую очередь, а дальше – личные средства.</p>
+    <p>Деактивировать услугу можно просто отвязав банковскую карту в Профиле.</p>
+    <div class="icheck">
+        <div class="square-green single-row">
+            <div class="checkbox ">
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox">Принимаю договор оферты</label>
+            </div>
+        </div>
     </div>
-    <div class="right-stat-bar">
-        <ul class="right-side-accordion">
-
-            <li class="widget-collapsible">
-                <a href="#" class="head widget-head bg-success active clearfix">
-                    <span class="pull-left"> Лента уведомлений</span>
-                    <span class="pull-right widget-collapse"><i class="ico-minus"></i></span>
-                </a>
-                <ul class="widget-container">
-                    <li>
-                        <div class="prog-row clearfix">
-                            <div class="user-thumb rsn-activity">
-                                <i class="fa fa-clock-o"></i>
-                            </div>
-                            <div class="rsn-details ">
-                                <p class="text-muted">
-                                    1 час назад
-                                </p>
-                                <p>
-                                    Сумма баллов накопилась на подарок
-                                </p>
-                            </div>
-                        </div>
-                        
-                       <!--  <div class="prog-row">
-                            <div class="user-thumb rsn-activity">
-                                <i class="fa fa-flash"></i>
-                            </div>
-                            <div class="rsn-details text-danger">
-                                <p class="text-muted">
-                                    1 час назад
-                                </p>
-                                <p>
-                                    Очень срочное важное сообщение!
-                                </p>
-                            </div>
-                        </div> -->
-                        <div class="prog-row">
-                            <div class="user-thumb rsn-activity">
-                                <i class="fa fa-check"></i>
-                            </div>
-                            <div class="rsn-details ">
-                                <p class="text-muted">
-                                    Воскресенье, 7 июля
-                                </p>
-                                <p>
-                                    Появился  <a href="#">новый ресторан наЛанч </a>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </li>
-            <li class="widget-collapsible">
-                <a href="#" class="head widget-head red-bg">
-                    <span class="pull-left">work progress (5)</span>
-                    <span class="pull-right widget-collapse"><i class="ico-minus"></i></span>
-                </a>
-                <ul class="widget-container">
-                    <li>
-                        <div class="prog-row side-mini-stat clearfix">
-                            <div class="side-graph-info">
-                                <h4>Target sell</h4>
-                                <p>
-                                    25%, Deadline 12 june 13
-                                </p>
-                            </div>
-                            <div class="side-mini-graph">
-                                <div class="target-sell">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="prog-row side-mini-stat">
-                            <div class="side-graph-info">
-                                <h4>product delivery</h4>
-                                <p>
-                                    55%, Deadline 12 june 13
-                                </p>
-                            </div>
-                            <div class="side-mini-graph">
-                                <div class="p-delivery">
-                                    <div class="sparkline" data-type="bar" data-resize="true" data-height="30" data-width="90%" data-bar-color="#39b7ab" data-bar-width="5" data-data="[200,135,667,333,526,996,564,123,890,564,455]">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="prog-row side-mini-stat">
-                            <div class="side-graph-info payment-info">
-                                <h4>payment collection</h4>
-                                <p>
-                                    25%, Deadline 12 june 13
-                                </p>
-                            </div>
-                            <div class="side-mini-graph">
-                                <div class="p-collection">
-                                    <span class="pc-epie-chart" data-percent="45">
-                                    <span class="percent"></span>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="prog-row side-mini-stat">
-                            <div class="side-graph-info">
-                                <h4>delivery pending</h4>
-                                <p>
-                                    44%, Deadline 12 june 13
-                                </p>
-                            </div>
-                            <div class="side-mini-graph">
-                                <div class="d-pending">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="prog-row side-mini-stat">
-                            <div class="col-md-12">
-                                <h4>total progress</h4>
-                                <p>
-                                    50%, Deadline 12 june 13
-                                </p>
-                                <div class="progress progress-xs mtop10">
-                                    <div style="width: 50%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" role="progressbar" class="progress-bar progress-bar-info">
-                                        <span class="sr-only">50% Complete</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </li>
-
-
-        </ul>
-
-    </div>
-
+    <button class="btn btn-round btn-success">Подключить</button>
 </div>
 <!--right sidebar end-->
 </section>
@@ -900,10 +775,7 @@
 <!--Sparkline Chart-->
 <script src="js/sparkline/jquery.sparkline.js"></script>
 <!--jQuery Flot Chart-->
-<script src="js/flot-chart/jquery.flot.js"></script>
-<script src="js/flot-chart/jquery.flot.tooltip.min.js"></script>
-<script src="js/flot-chart/jquery.flot.resize.js"></script>
-<script src="js/flot-chart/jquery.flot.pie.resize.js"></script>
+
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&AMP;sensor=false"></script>
 
 <script type="text/javascript" src="js/bootstrap-fileupload/bootstrap-fileupload.js"></script>

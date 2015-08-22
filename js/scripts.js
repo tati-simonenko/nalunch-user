@@ -1,6 +1,22 @@
 (function ($) {
     "use strict";
     $(document).ready(function () {
+
+        // right sidebar animation
+
+      $(".nl-show-sidebar").click(function(){
+       $(this).css("color","red"); 
+       $(this).parent().parent().parent().parent().find(".right-sidebar--user").toggleClass("animate__right-sidebar--user");
+
+      });
+
+      $(".right-sidebar--user .nl-close").click(function(){
+
+        $(this).parent().parent().find(".right-sidebar--user").removeClass("animate__right-sidebar--user");
+
+        });
+
+
         /*==Left Navigation Accordion ==*/
         if ($.fn.dcAccordion) {
             $('#nav-accordion').dcAccordion({
@@ -409,6 +425,9 @@ $(".nl-dishes--calendar").click(function(){
  
     e.preventDefault();
 });
+
+
+  
 
 
 
