@@ -6722,14 +6722,14 @@ p.nl-places-select__title { margin-bottom: 10px; }
 
 .nl-user-table__align-right { text-align: left; margin-bottom: 0; }
 .nl-user__scroll-area {
-    height: 300px;
+    height: 250px;
     overflow-y: scroll;
     position: relative;
 }
 .nl-user__scroll-area:after {
     content: "";
     position: fixed;
-    bottom: 150px;
+    top: 345px;
     left: 0;
     width: 100%;
     height: 50px;
@@ -6761,6 +6761,38 @@ p.nl-places-select__title { margin-bottom: 10px; }
 }
 .nl-user-table__day:last-of-type {
     border-bottom: none;
+}
+
+.nl-user-table__comment {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.nl-user-table__comment i {
+    padding: 9px 10px;
+    border-radius: 24px;
+    background-color: #59ace2;
+    color: #fff;
+}
+.nl-user-table__comment h5 {
+    font-weight: bold;
+    margin-bottom: 0px;
+    font-size: 14px;
+    margin-top: 7px;
+}
+.nl-user-table__comment h5 span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.nl-user-table__comment p {
+    font-style: italic;
+    font-size: 14px;
+}
+.nl-user-table__comment-textarea {
+    display: none;
+    color: #000;
+}
+.nl-user-table__comment-textarea:focus {
+    border: 1px solid #ef9d26;
 }
 
 .nl-user-modal__order {

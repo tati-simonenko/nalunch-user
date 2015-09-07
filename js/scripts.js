@@ -427,6 +427,13 @@ $(".nl-dishes--calendar").click(function(){
 });
 
 
+  // make-order comment
+
+  $(".nl-user-table__comment span").click(function(){
+    $(this).parent().parent().find(".nl-user-table__comment-textarea").slideToggle(200);
+  });
+
+
   
 
 
