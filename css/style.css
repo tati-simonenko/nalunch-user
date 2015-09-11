@@ -6680,6 +6680,17 @@ p.nl-places-select__title { margin-bottom: 10px; }
     position: relative;
 }
 
+.nl-order--title {
+    font-size: 16px;
+    margin-bottom: 1px;
+    margin-top: 0;
+}
+.nl-order--title a {
+    text-decoration: underline;
+}
+.nl-order--subtitle {
+    font-style: italic;
+}
 .nl-user__order-table .fa-info-circle:before { color: #C4C5C6; }
 .nl-user__order-table .fa-info-circle:hover:before { color: #A1A2A3; }
 
@@ -7021,6 +7032,25 @@ table.nl-user-table--points td { line-height: 20px!important; }
 }
 .btn-success.btn-order--active { background-color: #7B974D; }
 .btn-default.btn-order--active { background-color: #A2A5AE; }
+
+.nl-user--order-day--bottom {
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+.nl-user--order-day--bottom a {
+    text-decoration: underline;
+    margin-right: 20px;
+}
+.nl-user--order-day--bottom .link-inactive {
+    color: #a1a1a1;
+    cursor: default;
+}
+.nl-user--order-day--bottom .link-success {
+    color: #95b75d;
+}
+.nl-user--order-day--bottom .link-default {
+    color: #4A4848;
+}
 
 
 /*404*/
