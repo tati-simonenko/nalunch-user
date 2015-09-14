@@ -6549,6 +6549,9 @@ p.nl-places-select__title { margin-bottom: 10px; }
     margin: 0 auto;
 }
 .right-sidebar--user .nl-read {
+    color: #fff;
+}
+.right-sidebar--user .nl-read a {
     text-decoration: underline;
     color: #fff;
 }
