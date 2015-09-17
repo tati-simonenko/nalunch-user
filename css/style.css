@@ -5241,6 +5241,9 @@ div.tagsinput span.tag {
 .tar {
     background:#1fb5ac !important;
 }
+.yellow {
+    background: #FFDF7C !important;
+}
 .mini-stat .green {
     background:#aec785 !important;
 }
@@ -6588,6 +6591,14 @@ p.nl-places-select__title { margin-bottom: 10px; }
 
 .animate__right-sidebar--user {right: 0;}
 
+.nl-icon--clock {
+    overflow: hidden;
+    margin: 20px 0 15px 0;
+}
+.nl-icon--clock span {
+    float: none;
+}
+
 /*news*/
 
 .nl-user__news--head {
@@ -6736,6 +6747,10 @@ p.nl-places-select__title { margin-bottom: 10px; }
     border-bottom: 1px solid #95b75d;
     margin-right: 0;
     padding: 15px 0;
+}
+.nl-user__total--head span {
+    color: #fff;
+    font-weight: bold;
 }
 .nl-user__total--head .text-nalunch {
     font-weight: bold;
