@@ -6029,19 +6029,27 @@ select.form-control:focus {
 }
 
 #weather {
-  width: 500px;
-  margin: 0px auto;
-  text-align: center;
-  text-transform: uppercase;
+    width: 270px;
+    background-color: #fff;
+    padding: 32px 11px 5px;
+    min-height: 194px;
+    margin: 0px auto;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 #weather i {
   color: #fff;
   font-family: weather;
-  font-size: 150px;
+  font-size: 100px;
   font-weight: normal;
   font-style: normal;
   line-height: 1.0;
+}
+
+#weather [class|=icon] {
+    font-size: 99px;
+    color: #ef9d26;
 }
 
 .icon-0:before { content: ":"; }
@@ -6094,12 +6102,11 @@ select.form-control:focus {
 .icon-47:before { content: "S"; }
 
 #weather h2 {
-  margin: 0 0 8px;
-  color: #fff;
-  font-size: 100px;
-  font-weight: 300;
-  text-align: center;
-  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+    margin: 0 0 0;
+    color: #ef9d26;
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center;
 }
 
 #weather ul {
@@ -6108,15 +6115,16 @@ select.form-control:focus {
 }
 
 #weather li {
-  background: #fff;
-  background: rgba(255,255,255,0.90);
-  padding: 20px;
-  display: inline-block;
-  border-radius: 5px;
+    background: #fff;
+    background: rgba(255,255,255,0.90);
+    padding: 0 10px;
+    display: inline-block;
+    border-radius: 5px;
+    text-transform: none;
 }
 
 #weather .currently {
-  margin: 0 20px;
+  margin: 0;
 }
 
 /*dishes*/
