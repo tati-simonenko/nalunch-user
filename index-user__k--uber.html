@@ -17,6 +17,8 @@
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
     <link href="js/jvector-map/jquery-jvectormap-1.2.2.css" rel="stylesheet">
     <link href="css/clndr.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font-awesome/4.3.0/css/font-awesome.min.css">
     <!--clock css-->
     <link href="js/css3clock/css/style.css" rel="stylesheet">
     <!--Morris Chart CSS -->
@@ -156,6 +158,19 @@
     <div class="col-md-3">
         <div class="mini-stat clearfix" style="min-height: 194px; padding-top: 66px;">
             <div class="mini-stat__left">
+                <span class="mini-stat-icon tar"><i class="fa fa-money"></i></span>
+            </div>
+            <div class="mini-stat__right">
+                 <div class="mini-stat-info">
+                    <div class="nl-dashboard__card"><i class="fa fa-cc-visa fa-2x"></i> <p>•••• 6565</p></div>
+                    <div><a href="" class="nl-user-btn-fill text-underline">- забыть карту</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="mini-stat clearfix" style="min-height: 194px; padding-top: 66px;">
+            <div class="mini-stat__left">
                 <span class="mini-stat-icon pink"><i class="fa fa-money"></i></span>
             </div>
             <div class="mini-stat__right">
@@ -196,26 +211,12 @@
             </div>
         </section>
     </div>
-    <div class="col-md-3">
-        <section class="weather-widget nl-weather-widget clearfix">
-            <div class="pull-left weather-icon">
-                <canvas id="icon1" width="60" height="60"></canvas>
-            </div>
-            <div>
-                <ul class="weather-info">
-                    <li class="weather-city"><i class="ico-location"></i> Петербург </li>
-                    <li class="weather-cent"><span>18</span></li>
-                    <li class="weather-status">Дождит</li>
-                </ul>
-            </div>
-        </section>
-    </div>
+    
 </div>
 
 <div class="row">
     <div class="col-md-9">
         <div class="panel-body">
-                    <button type="button" class="btn btn-round btn-nalunch">Обед сейчас</button>
                     <button type="button" class="btn btn-round btn-nalunch">Обед сейчас</button>
                     <button type="button" class="btn btn-round btn-default">Японская</button>
                     <button type="button" class="btn btn-round btn-default">Европейская</button>
@@ -236,16 +237,15 @@
         <!-- map end-->
     </div>
     <div class="col-md-3">
-        <section class="panel">
-            <div class="panel-body">
-                <ul class="clearfix prospective-spark-bar nl-user__point-info">
-                    <li class=" spark-bar-label">
-                        <p class="bar-label-value"> LEICA cafe-bar</p>
-                        <p class="text-muted">наб. Канала Грибоедова, д. 29</p>
-                        <p>Европейская<br>обед: 12:00 - 16:00</p>
-                        <button type="button" class="btn btn-round btn-default">Подробнее</button>
-                    </li>
-                    
+        <section class="weather-widget nl-weather-widget clearfix">
+            <div class="pull-left weather-icon">
+                <canvas id="icon1" width="60" height="60"></canvas>
+            </div>
+            <div>
+                <ul class="weather-info">
+                    <li class="weather-city"><i class="ico-location"></i> Петербург </li>
+                    <li class="weather-cent"><span>18</span></li>
+                    <li class="weather-status">Дождит</li>
                 </ul>
             </div>
         </section>

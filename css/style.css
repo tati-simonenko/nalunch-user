@@ -6428,7 +6428,17 @@ p.nl-places-select__title { margin-bottom: 10px; }
 .nl-profile-user__notifications--rest label {
     display: block;
 }
-
+.nl-profile-user__checkbox {
+    margin-top: 10px;
+}
+.nl-profile-user__checkbox .icheckbox_square-green{
+    float: right;
+}
+.nl-profile-user__checkbox label {
+    margin-right: 15px;
+    padding-left: 10px;
+    font-size: 14px;
+}
 
 /*loyality*/
 
