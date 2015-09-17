@@ -6032,7 +6032,7 @@ select.form-control:focus {
 }
 
 #weather {
-    width: 270px;
+    /*width: 270px;*/
     background-color: #fff;
     padding: 32px 11px 5px;
     min-height: 194px;
@@ -6261,6 +6261,10 @@ select.form-control:focus {
 
 .transaction-range input { padding: 4px 12px !important; }
 .nl-tracsations-dates { padding-left: 1px; }
+.nl-tracsations-dates small {
+    font-size: 10px;
+    color: #a1a1a1;
+}
 
 /*колонки для транзакций, так как в бутстрапе не помещается*/
 
