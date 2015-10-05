@@ -6603,6 +6603,30 @@ p.nl-places-select__title { margin-bottom: 10px; }
     float: none;
 }
 
+.nl-dashboard-info__current {
+    margin-top: 4px;
+    font-size: 10px;
+}
+.nl-dashboard-info__current i {
+    position: relative;
+}
+.nl-dashboard-info__current-info {
+    display: none;
+    position: absolute;
+    top: -32px;
+    right: -208px;
+    background-color: #fff;
+    padding: 15px 20px;
+    width: 200px;
+    border: 1px solid #ddd;
+    z-index: 101;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+}
+.nl-dashboard-info__current i:hover .nl-dashboard-info__current-info {
+    display: block;
+}
+
 /*news*/
 
 .nl-user__news--head {
