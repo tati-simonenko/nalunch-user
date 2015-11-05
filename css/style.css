@@ -2418,8 +2418,8 @@ ul.inbox-pagination li {
 .profile-information--restaurant .profile-desk h1 {
     color:#57c8f1;
 }
-.profile-information .profile-desk span,.profile-information .profile-desk p {
-    padding-bottom:25px;
+.profile-information .profile-desk span.text-muted,.profile-information .profile-desk p {
+    padding-bottom:15px;
     display:inline-block;
 }
 .profile-information .profile-statistics h1 {
@@ -5209,8 +5209,8 @@ div.tagsinput span.tag {
     margin-bottom:20px;
 }
 .mini-stat-icon {
-    width:60px;
-    height:60px;
+    width:57px;
+    height:57px;
     display:inline-block;
     line-height:60px;
     text-align:center;
@@ -5239,7 +5239,8 @@ div.tagsinput span.tag {
     background:#fa8564 !important;
 }
 .tar {
-    background:#1fb5ac !important;
+    /*background:#1fb5ac !important;*/
+    background-color: #78CA54 !important;
 }
 .yellow {
     background: #FFDF7C !important;
@@ -5249,6 +5250,12 @@ div.tagsinput span.tag {
 }
 .pink {
     background:#a48ad4 !important;
+}
+.boring {
+    background-color: #f1f2f7 !important;
+}
+.red-warning {
+    background-color: #FF4E10 !important;
 }
 .yellow-b {
     background: #fdd752 !important;
@@ -5866,6 +5873,7 @@ right: -1px;
 /*select basic style*/
 .nl-select-group {
     display: inline-block;
+    vertical-align: top;
     margin-right: 10px;
     position: relative;
     margin-bottom: 5px;
@@ -6160,7 +6168,7 @@ select.form-control:focus {
 .nl-dishes-categories #tags_1_tag {width: 141px !important;}
 .nl-dishes .form-inline table .form-control { width: 100px !important; }
 .nl-dishes .form-inline table td:nth-child(1) .form-control { width: 150px !important; }
-.nl-dishes-search__tools { position: relative; }
+.nl-dishes-search__tools { position: relative; padding-bottom: 15px; }
 .nl-dishes-search__tools .nl-dishes-tools__toggle { display: inline-block; position: relative; }
 .nl-dishes-search__tools .nl-dishes-tools__toggle i { margin-left: 7px; }
 .nl-btn-add-dish { font-weight: bold; }
@@ -7203,7 +7211,56 @@ table.nl-user-table--points td { line-height: 20px!important; }
 }
 
 
+/*organisation*/
 
+.nl-org__order-table  tr:nth-child(1)  td {
+    border-top: 0;
+}
+.nl-org__order-table tr td:nth-child(1) {
+    width: 300px;
+    vertical-align: middle;
+}
+.wizard > .steps a {
+    line-height: 23px !important;
+}
+
+.nl-org__people-list {
+    margin: 30px 0;
+}
+.nl-table-order-history a {
+    text-decoration: underline;
+    color: #A3A6AE;
+}
+.nl-form-item__title {
+    margin-bottom: 4px;
+}
+.nl-form-item__text {
+    padding-top: 10px;
+}
+.nl-org-table-member-list td:last-of-type {
+    position: relative;
+}
+.nl-org-table-member-list td:last-of-type span {
+    cursor: pointer;
+}
+.nl-org-table-member-list a {
+    text-decoration: underline;
+}
+.nl-pagination-make-order--o .dataTables_length {
+    float: left;
+    width: 50%;
+}
+.nl-pagination-make-order--o .dataTables_length label {
+    float: left;
+    text-align: left;
+}
+.nl-pagination-make-order--o .dataTables_length select {
+    display: inline-block;
+        margin: 0 2px 0 0;
+}
+.nl-pagination-make-order--o .dataTables_info, .dataTables_paginate {
+        padding: 15px 0;
+}
 
 
 

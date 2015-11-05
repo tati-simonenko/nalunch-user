@@ -1,0 +1,550 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="">
+    <meta name="author" content="ThemeBucket">
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <title>наЛанч: Профиль</title>
+    <!--Core CSS -->
+    <link href="bs3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-reset.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+
+    <link href="js/iCheck/skins/square/square.css" rel="stylesheet">
+    <link href="js/iCheck/skins/square/green.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="js/bootstrap-fileupload/bootstrap-fileupload.css" />
+    <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="js/jquery-multi-select/css/multi-select.css" />
+    <link rel="stylesheet" type="text/css" href="js/jquery-tags-input/jquery.tagsinput.css" />
+
+    <link rel="stylesheet" type="text/css" href="js/select2/select2.css" />
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]>
+    <script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<section id="container">
+<!--header start-->
+<header class="header fixed-top clearfix">
+<!--logo start-->
+<div class="brand">
+
+    <a href="index-user.html" class="logo">
+        <!-- <img src="images/logo-header.png" alt=""> -->
+        <h1 class="logo--head">наЛанч</h1>
+        <h2 class="logo--subhead">hello, организан!</h2>
+    </a>
+    
+</div>
+<!--logo end-->
+
+<div class="nav notify-row" id="top_menu">
+    <!--  notification start -->
+
+    
+    
+    <!--  notification end -->
+</div>
+<div class="top-nav clearfix">
+    <!--search & user info start-->
+    <ul class="nav pull-right top-menu">
+
+        
+        <!-- user login dropdown start-->
+        <li class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                <img alt="" src="images/placeholder.png">
+                <span class="username">Имя организации</span>
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu extended logout">
+                <li><a href="profile-org.html"><i class=" fa fa-suitcase"></i>Профиль</a></li>
+                <li><a href="index-org.html"><i class="fa fa-key"></i>Выйти из профиля</a></li>
+            </ul>
+        </li>
+        <!-- user login dropdown end -->
+        
+    </ul>
+    <!--search & user info end-->
+</div>
+</header>
+<!--header end-->
+<aside>
+    <div id="sidebar" class="nav-collapse">
+        <!-- sidebar menu start-->
+        <div class="leftside-navigation">
+            <ul class="sidebar-menu" id="nav-accordion">
+                <li> 
+                    <a href="index-org.html" class="">
+                        <i class="fa fa-dashboard"></i>
+                        <span>Рабочий стол</span>
+                    </a>
+                </li>
+
+                <li> 
+                    <a href="member-list.html" class="">
+                        <i class="fa fa-male"></i>
+                        <span>Список сотрудников</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="sub-menu">
+                        <i class="fa fa-rouble"></i>
+                        <span>Отчеты</span>
+                    </a>
+                    <ul class="sub">
+                        <li><a href="report-transactions.html">По транзакциям</a></li>
+                        <li><a href="report-restaurants.html">По ресторанам</a></li>
+                        <li><a href="report-people.html">По сотрудникам</a></li>
+                        
+                    </ul>
+                </li>
+
+                <li>
+                    <a class="sub-menu" >
+                        <i class="fa fa-rouble"></i>
+                        <span>Доставка</span>
+                    </a>
+                    <ul class="sub">
+                        <li><a href="make-order--o.html">Сделать заказ</a></li>
+                        <li ><a href="order-history--o.html">Заказы</a></li>
+                    </ul>
+                </li>
+
+               <li>
+                    <a href="profile-org.html" class="active">
+                        <i class="fa fa-user"></i>
+                        <span>Профиль</span>
+                    </a>
+                </li>
+                
+            </ul>            
+        </div>
+        <!-- sidebar menu end-->
+    </div>
+</aside>
+<!--sidebar end-->
+    <!--main content start-->
+    <section id="main-content">
+        <section class="wrapper">
+        <!-- page start-->
+
+        <div class="row profile-information--restaurant">
+            <div class="col-md-12">
+                <section class="panel">
+                    <div class="panel-body profile-information">
+                       <div class="col-md-2">
+                           <div class="profile-pic nl-profile-pic text-center">
+                               <img alt=""/ src="images/logo-profile.png" >
+                               <div class="fileupload nl-fileupload fileupload-new" data-provides="fileupload">
+                                            <span class="btn btn-white btn-file btn-xs">
+                                            <span class="fileupload-new"><i class="fa fa-upload"></i> &nbsp;Лого организации</span>
+                                            <span class="fileupload-exists"><i class="fa fa-undo"></i> Изменить</span>
+                                            <input type="file" class="default" />
+                                            </span>
+                                    <span class="fileupload-preview" style="margin-left:5px;"></span>
+                                    <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none; margin-left:5px;"></a>
+                                </div>
+                           </div>
+                       </div>
+                       <div class="col-md-4">
+                           <div class="profile-desk">
+                               <h1 class="text-info">Я свободен</h1>
+                               <span class="text-muted">likeabird@in.sky</span>
+                               <div>
+                                   <div class="nl-select-group">
+                                        <select id="e1" class="nl-select nl-select-basic">
+                                            <option >Организация</option>
+                                            <option value="">i-Free&nbsp;</option>
+                                            <option value="">i-Free the greatest&nbsp;</option>
+                                        </select>
+                                    </div>
+                               </div>
+                               
+                               
+                           </div>
+                       </div>
+                       <div class="col-md-6">
+                           <div class="profile-statistics">
+                               <h1></h1>
+                               <p>
+                               Мы будем рады рассказывать о ваших специальных предложениях и новостях нашим подписчикам в Вконтакте и Instagram. Присылайте ваши новости к нам на почту
+                               </p>
+                               <ul>
+                                   <li class="active">
+                                       <a href="https://instagram.com/nalunch/" target="_blank">
+                                           <i class="fa fa-instagram"></i>
+                                       </a>
+                                   </li>
+                                   <li>
+                                       <a href="https://vk.com/nalunch" target="_blank">
+                                           <i class="fa fa-vk"></i>
+                                       </a>
+                                   </li>
+                                   <li>
+                                       <a href="mailto:info@nalunch.ru">
+                                           <i class="fa fa-envelope-o"></i>
+                                       </a>
+                                   </li>
+                               </ul>
+                           </div>
+                       </div>
+                    </div>
+                </section>
+            </div>
+            <div class="col-md-12">
+                <section class="panel">
+                    <header class="tab-bg-dark-navy-blue">
+                        <ul class="nav nav-tabs nav-justified ">
+                            <li class="active">
+                                <a data-toggle="tab" href="#contacts">
+                                    Контактные данные
+                                </a>
+                            </li>
+                            <li>
+                                <a data-toggle="tab" href="#subscribes">
+                                    Подписки
+                                </a>
+                            </li>
+                            <li>
+                                <a data-toggle="tab" href="#passwords" class="contact-map">
+                                    Пароли
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </header>
+                    <div class="panel-body">
+                        <div class="tab-content tasi-tab">
+                            <div id="contacts" class="tab-pane active">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="panel-body">
+                                            <p></p>
+                                            <form role="form" class="form-horizontal">
+                                                
+                                                <p>
+                                                    <strong>Юридический адрес</strong><br/>
+                                                    адрес здесь
+                                                </p>
+                                                <p>
+                                                    <strong>ИНН</strong><br/>
+                                                    1234567890
+                                                </p>
+                                                <p>
+                                                    <strong>Расчетный счет</strong><br/>
+                                                    40702810022020001408
+                                                </p>
+                                                <p>
+                                                    <strong>Название банка</strong><br/>
+                                                    Филиал "Санкт-петербургская дирекция ОАО "УралСиб""
+                                                </p>
+                                                <p>
+                                                    <strong>БИК банка</strong><br/>
+                                                    044030706
+                                                </p>
+                                                <p>
+                                                    <strong>Корреспондентский счет</strong><br/>
+                                                    30101810800000000706
+                                                </p>
+                                                <p>
+                                                    <strong>КПП</strong><br/>
+                                                    123456789
+                                                </p>
+
+                                                
+
+                                            </form>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="passwords" class="tab-pane">
+                                <form role="form" class="form-horizontal">
+                                                <p>&nbsp;</p>
+
+                                                <div class="form-group">
+                                                    <label class="col-lg-2 control-label">Старый пароль</label>
+                                                    <div class="col-lg-4">
+                                                        <input type="text" placeholder=" " id="skype" class="form-control">
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="form-group">
+                                                    <label class="col-lg-2 control-label">Новый пароль</label>
+                                                    <div class="col-lg-4">
+                                                        <input type="text" placeholder=" " id="email" class="form-control">
+                                                    </div>
+                                                </div>
+                                                
+
+                                                <div class="form-group">
+                                                    <div class="col-lg-offset-2 col-lg-9">
+                                                        <button class="btn btn-info" type="submit">Поменять</button>
+                                                    </div>
+                                                </div>
+
+                                            </form>
+                                
+
+
+                            </div>
+                            <div id="subscribes" class="tab-pane ">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p></p>
+                                        <table class="table table-hover nl-table__user-profile--subscribes">
+                                            <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="">
+                                                    <td>Подписка на то</td>
+                                                    <td class="icheck">
+                                                        <div class="square-green single-row">
+                                                            <div class="checkbox ">
+                                                                <input type="checkbox" >
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="">
+                                                    <td>Подписка на другое </td>
+                                                    <td class="icheck">
+                                                        <div class="square-green single-row">
+                                                            <div class="checkbox ">
+                                                                <input type="checkbox" >
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                
+                                                
+                                                
+                                            </tbody>
+                                        </table>
+                                        <div class="form-group">
+                                            <div class="col-lg-9">
+                                                <button class="btn btn-info" type="submit">Сохранить</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- page end-->
+        </section>
+    </section>
+    <!--main content end-->
+<!--right sidebar start-->
+<div class="right-sidebar--user">
+    <div class="nl-close">x</div>
+    <h3 class="text-center">Подключение услуги<br/>личный счет</h3>
+    <p>Привяжите банковскую карту к карте наЛанч, чтобы быстро и легко расплачиваться в ресторанах-партнерах и получать скидки.</p>
+    <p>Вы можете подключить услугу, даже если вы корпоративный клиент и ваш работодатель компенсирует ваши затраты на обед. В таком случае компенсация будет списываться в первую очередь, а дальше – личные средства.</p>
+    <p>Деактивировать услугу можно просто отвязав банковскую карту в Профиле или на Рабочем столе.<br/>Пока можно привязать только одну банковскую карту. </p>
+    <div class="icheck">
+        <div class="square-green single-row">
+            <div class="checkbox ">
+                <input type="checkbox" id="checkbox">
+                <span class="nl-read">Принимаю<a href="#myModal" role="button" data-toggle="modal" > договор оферты</a></span>
+            </div>
+        </div>
+    </div>
+    <div class="text-center">
+        <a href="" class="btn btn-round btn-success">Подключить</a>
+    </div>
+
+</div>
+<!--right sidebar end-->
+
+
+</section>
+
+
+<!-- modal details -->
+                        
+<div id="myModal" class="modal fade nl-user-modal__order" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            
+
+            <div class="panel-body">
+
+                <!-- инфа по дням -->
+
+                <div class="nl-user__detail-order">
+
+                    <h4 class="text-center">Договор оферты</h4>
+                    
+                   <div class="">
+
+<p class=""><b><span>1. </span></b><b><span>Оплата.</span></b></p>
+
+<p><span>Оплата Заказа осуществляется с помощью банковской карты через АО «АЛЬФА-БАНК». Комиссия при оплате не взимается.</span></p>
+
+<p><span>Платежи осуществляются при помощи платежных систем VISA и MASTER CARD при наличии возможности совершения интернет-платежей Вашей банковской картой.</span></p>
+
+<p><span>О наличии возможности совершения интернет-платежей Вы можете узнать, обратившись в банк, выпустивший Вашу банковскую карту.</span></p>
+<p></p>
+<p><b><span>2. </span></b><b><span>Конфиденциальность.</span></b></p>
+
+<p><span>Услуга оплаты через сеть Интернет осуществляется в соответствии с Правилами международных платежных систем на принципах соблюдения конфиденциальности и безопасности совершения платежа, для чего используются <u>самые современные методы проверки, шифрования и передачи данных по закрытым каналам связи</u>.</span></p>
+
+<p><span>Ввод данных банковской карты осуществляется на защищенной платежной странице АО «АЛЬФА-БАНК».</span></p>
+
+<p><span>Случаи отказа в совершении платежа: </span></p>
+
+<ul>
+    <li>банковская карта не предназначена для совершения интернет-платежей, о чем можно узнать, обратившись в банк, выпустивший Вашу банковскую карту;</li>
+    <li>недостаточно денежных средств для оплаты на балансе банковской карты. Подробнее о наличии денежных средств на балансе банковской карты Вы можете узнать, обратившись в банк, выпустивший Вашу банковскую карту;</li>
+    <li>данные банковской карты введены неверно;</li>
+    <li>истек срок действия банковской карты. Срок действия банковской карты, как правило, указан на лицевой стороне банковской карты (месяц и год, до которого действительна банковская карта). Подробнее о сроке действия банковской карты Вы можете узнать, обратившись в банк, выпустивший Вашу банковскую карту;</li>
+    <li>превышен установленный лимит операций за 1 (Один) день. Сумма ежедневного лимита для всех операций по банковской карте определяется банком-партнером.</li>
+</ul>
+
+<p><span>Для корректного ввода необходимо внимательно и точно, соблюдая последовательность цифр и букв, ввести данные так, как они указаны на Вашей банковской карте:</span></p>
+
+<ol>
+    <li>Владелец карты, как правило, указан на лицевой стороне банковской карты на английском языке заглавными буквами. Например, IVANOV IVAN;</li>
+    <li>Номер карты, как правило, указан на лицевой стороне банковской карты и состоит из 16-и цифр. Например: 0123 4567 8901 2345;</li>
+    <li>Срок действия карты, как правило, указан на лицевой стороне банковской карты - месяц и год, до которого действительна банковская карта. Срок действия банковской карты вводится цифрами. Например, цифра «12» вводится в поле «Месяц», цифра «13» вводится в поле «Год», что означает: банковская карта действительна до декабря 2013 года;</li>
+    <li>CVV2 или CVC2 код банковской карты, как правило, указан на оборотной стороне банковской карты и состоит из 3-х цифр. Например, 123.</li>
+</ol>
+
+<p><span>По вопросам оплаты с помощью банковской карты и иным вопросам, связанным с работой сайта, Вы можете обратиться по следующим телефонам: +7 (812) 438-13-70</span></p>
+
+<p><b><span>3.</span></b><b><span>Возврат</span></b></p>
+
+<p><span>Возврат денежных средств на банковскую карту производится в следующих случаях:</span></p>
+
+<ul>
+    <li>Заказчик оплатил Заказ, но Товар не был доставлен в согласованные сроки;</li>
+    <li>Заказчик оплатил Заказ, но отказался от получения Товара до момента его доставки;</li>
+    <li>Заказчиком обнаружены недостатки в доставленном Товаре. При обнаружении недостатков в доставленном Товаре Заказчику необходимо связаться с оператором для урегулирования возникшей проблемы.</li>
+</ul>
+
+<p><span>При оплате Заказа банковской картой возврат денежных средств осуществляется только безналичным способом путем перевода денежных средств на банковскую карту.</span></p>
+
+<p><span>Порядок возврата регулируется Правилами международных платежных систем.</span></p>
+
+<p><span>Для возврата денежных средств на банковскую карту Заказчику необходимо направить запрос о предоставлении на его адрес электронной почты формы - «Заявление о возврате денежных средств». Полученная форма должна быть заполнена и направлена по адресу support@nalunch.ru с приложением копии документа, удостоверяющего личность. </span></p>
+
+<p><span>Возврат денежных средств будет осуществлен на банковский счет Заказчика, указанный в заявлении о возврате денежных средств, в течение 21 (Двадцати одного) рабочего дня со дня получения заявления о возврате денежных средств Компанией.</span></p>
+
+<p><span>Для возврата денежных средств, ошибочно зачисленных на расчетный счет Компании посредством платежных систем, Заказчику необходимо направить письменное заявление с приложением копии документа, удостоверяющего личность, а также чеков/квитанций, подтверждающих ошибочное зачисление, по адресу: support@nalunch.ru</span></p>
+
+<p><span>После получения письменного заявления с приложением копии документа, удостоверяющего личность и чеков/квитанций, Компания производит возврат денежных средств в срок до 21 (Двадцати одного) рабочего дня со дня получения Заявления на расчетный счет Заказчика, указанный в заявлении. В этом случае, сумма возврата будет равна стоимости Заказа. Срок рассмотрения Заявления и возврата денежных средств Заказчику начинает исчисляться с момента получения Компанией Заявления и рассчитывается в рабочих днях без учета праздничных и/или выходных дней.</span></p>
+
+<p><b><span>4. Юридическое Лицо </span></b></p>
+
+<p>ООО «Школа он-лайн»<br/>
+ИНН 7813480395<br/>
+ОГРН 1107847287283<br/>
+р/с 40702810737000005647<br/>
+в филиале ОПЕРУ-4 ОАО Банк ВТБ в Санкт-Петербурге</p>
+
+<p><b><span>5. Юридический Адрес </span></b></p>
+<p>Российская Федерация, г. Санкт-Петербург, Большой проспект П.С., дом 29А, литер Б.</p>
+
+</div>
+                    
+
+                </div>
+
+                <!-- инфа по дням -->
+
+                
+
+            </div>
+
+            <div class="modal-footer text-center">
+                <button class="btn btn-default" data-dismiss="modal" aria-hidden="true">Ага, ок</button>
+                
+            </div>
+
+            
+        </div>
+    </div>
+</div>
+
+<!-- modal details -->
+
+<!-- Placed js at the end of the document so the pages load faster -->
+
+<!--Core js-->
+<script src="js/jquery.js"></script>
+<script src="bs3/js/bootstrap.min.js"></script>
+<script class="include" type="text/javascript" src="js/jquery.dcjqaccordion.2.7.js"></script>
+<script src="js/jquery.scrollTo.min.js"></script>
+<script src="js/jQuery-slimScroll-1.3.0/jquery.slimscroll.js"></script>
+<script src="js/jquery.nicescroll.js"></script>
+<!--Easy Pie Chart-->
+<script src="js/easypiechart/jquery.easypiechart.js"></script>
+<!--Sparkline Chart-->
+<script src="js/sparkline/jquery.sparkline.js"></script>
+<!--jQuery Flot Chart-->
+
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&AMP;sensor=false"></script>
+
+<script type="text/javascript" src="js/bootstrap-fileupload/bootstrap-fileupload.js"></script>
+
+
+
+<script src="js/iCheck/jquery.icheck.js"></script>
+
+<script type="text/javascript" src="js/ckeditor/ckeditor.js"></script>
+
+<!--common script init for all pages-->
+<script src="js/scripts.js"></script>
+
+<script src="js/icheck-init.js"></script>
+
+<script src="js/bootstrap-switch.js"></script>
+<script type="text/javascript" src="js/fuelux/js/spinner.min.js"></script>
+
+<script type="text/javascript" src="js/jquery-multi-select/js/jquery.multi-select.js"></script>
+<script type="text/javascript" src="js/jquery-multi-select/js/jquery.quicksearch.js"></script>
+
+<script type="text/javascript" src="js/bootstrap-inputmask/bootstrap-inputmask.min.js"></script>
+
+<script src="js/jquery-tags-input/jquery.tagsinput.js"></script>
+
+<script src="js/select2/select2.js"></script>
+<script src="js/select-init.js"></script>
+
+</body>
+</html>
+

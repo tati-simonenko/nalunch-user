@@ -358,7 +358,7 @@ var defaults = $.fn.steps.defaults = {
          * @default "Finish"
          * @for defaults
          **/
-        finish: "Finish",
+        finish: "Конец",
 
         /**
          * Label for the next button.
@@ -368,7 +368,7 @@ var defaults = $.fn.steps.defaults = {
          * @default "Next"
          * @for defaults
          **/
-        next: "Next",
+        next: "След",
 
         /**
          * Label for the previous button.
@@ -378,7 +378,7 @@ var defaults = $.fn.steps.defaults = {
          * @default "Previous"
          * @for defaults
          **/
-        previous: "Previous",
+        previous: "Пред",
 
         /**
          * Label for the loading animation.

@@ -149,138 +149,37 @@
 
 <!--mini statistics start-->
 
-<div class="row nl-mini-stat">
-    <div class="col-md-3">
-        <div class="mini-stat clearfix">
-            <div class="mini-stat__left">
-                <span class="mini-stat-icon tar"><i class="fa fa-money"></i></span>
-            </div>
-            <div class="mini-stat__right">
-                 <div class="mini-stat-info">
-                    <span>200 <i class="fa fa-rub"></i></span>
-                    Баланс на вашей карте
-                    <div class="nl-dashboard-info__current text-muted">
-                        на 10 августа 2015 | 12:13
-                        <i class="fa fa-info-circle">
-                            <div class="nl-dashboard-info__current-info">Размер доступных средств мог измениться при оплате картой после указанного времени.</div>
-                        </i>
-                    </div> 
-                    
-                    <!-- <div><a href="" class="nl-user-btn-fill text-underline">Привязать карту</a></div> -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="mini-stat clearfix">
-            <div class="mini-stat__left">
-                <span class="mini-stat-icon boring"><i class="fa fa-info"></i></span>
-            </div>
-            <div class="mini-stat__right">
-                 <div class="mini-stat-info">
-                    <span>0 <i class="fa fa-rub"></i></span>
-                    Максимальный перерасход в день 700 <i class="fa fa-rub"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="mini-stat clearfix">
-            <div class="mini-stat__left">
-                 <span class="mini-stat-icon red-warning"><i class="fa fa-exclamation"></i></span>
-            </div>
-           <div class="mini-stat__right">
-               <div class="mini-stat-info">
-                    <span>1 августа</span>
-                    Следующее начисление <br>200 <i class="fa fa-rub"></i>
-                </div>
-           </div>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="mini-stat clearfix">
-            <div class="mini-stat__left">
-                <span class="mini-stat-icon boring"><i class="fa fa-info"></i></span>
-            </div>
-            <div class="mini-stat__right">
-                <div class="mini-stat-info">
-                    <span>2 556 <i class="fa fa-rub"></i></span>
-                    Потрачено в этом<br>месяце
-                </div>
-            </div>
-        </div>
-    </div>
-    
-</div>
+
+
 
 <div class="row">
-    <div class="col-md-3">
-        <section class="panel">
-            <div class="panel-body">
-                <div class="top-stats-panel">
-                    <div class="gauge-canvas">
-                        <h4 class="widget-h">Компенсация в неделю</h4>
-                        <canvas width=160 height=100 id="gauge"></canvas>
-                    </div>
-                    <ul class="gauge-meta clearfix">
-                        <li id="gauge-textfield" class="pull-left gauge-value"></li>
-                        <li class="pull-right gauge-title">2 000 Р</li>
-                    </ul>
-                </div>
+    <div class="col-md-2">
+        <div class="panel-body omg">
+            <div>
+                <a href="">Все</a>
             </div>
-        </section>
-    </div>
-    <div class="col-md-3">
-        <section class="panel">
-            <div class="panel-body">
-                <div class="top-stats-panel">
-                    <div class="daily-visit">
-                        <h4 class="widget-h">Затраты в неделю</h4>
-                        <div id="daily-visit-chart" style="width:100%; height: 100px; display: block">
-
-                        </div>
-                        <ul class="chart-meta clearfix">
-                            <li class="pull-left visit-chart-value">3233</li>
-                            <li class="pull-right visit-chart-title"><i class="fa fa-arrow-up"></i> 15%</li>
-                        </ul>
-                    </div>
-                </div>
+            <div>
+                <a href="">Русская</a>
             </div>
-        </section>
-    </div>
-    <div class="col-md-3">
-        <section class="panel">
-            <div class="panel-body">
-                <div class="top-stats-panel">
-                    <h4 class="widget-h">Топ ваших ресторанов</h4>
-                    <div class="sm-pie">
-                    </div>
+            <a href="">Обед сейчас</a>
+            <a href="">Европейская</a>
+            <a href="">Европейская</a>
+            <a href="">Европейская</a>
+            <a href="">Американская</a>
+            <a href="">Европейская</a>
+            <a href="">Американская</a>
+            <a href="">Европейская</a>
                 </div>
-            </div>
-        </section>
+                <style>
+                .omg a {
+                    display: inline-block;
+                    text-decoration: underline;
+                    margin-bottom: 5px;
+                    color: #a1a1a1;
+                }
+                </style>
     </div>
-    <div class="col-md-3">
-        <div id="weather"></div>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-md-9">
-        <div class="panel-body">
-                    <button type="button" class="btn btn-round btn-nalunch">Обед сейчас</button>
-                    <button type="button" class="btn btn-round btn-default">Японская</button>
-                    <button type="button" class="btn btn-round btn-default">Европейская</button>
-                    <button type="button" class="btn btn-round btn-default">Русская</button>
-                    <button type="button" class="btn btn-round btn-info">Выбранная</button>
-                    <button type="button" class="btn btn-round btn-default">Американская</button>
-                    <button type="button" class="btn btn-round btn-default">Морепродукты</button>
-                </div>
-    </div>
-    <div class="col-md-3"></div>
-</div>
-
-<div class="row">
-    <div class="col-md-9">
+    <div class="col-md-7">
         <!-- map start-->
 
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.9953397518311!2d30.324153599999995!3d59.93221950000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631068027ce53%3A0xec84af965a7927ba!2z0L3QsNCxLiDQutCw0L3QsNC70LAg0JPRgNC40LHQvtC10LTQvtCy0LAsIDI5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1436420382622" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -306,121 +205,6 @@
 </div>
 
 
-<div class="row">
-    <div class="col-md-8" style="display:none;">
-        <section class="panel">
-            <header class="panel-heading">
-                Прибыль <span class="tools pull-right">
-            <a href="javascript:;" class="fa fa-chevron-down"></a>
-            <a href="javascript:;" class="fa fa-cog"></a>
-            <a href="javascript:;" class="fa fa-times"></a>
-            </span>
-            </header>
-            <div class="panel-body nl-js-chart">
-
-                <div id="graph-area" class="main-chart">
-                </div>
-                <div class="region-stats">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="region-earning-stats">
-                                В этом месяце заработано <span>68,4545,454 Р</span>
-                            </div>
-                            <ul class="clearfix location-earning-stats">
-                                <li class="stat-divider">
-                                    <span class="first-city">734,503 Р</span>
-                                    i-Free </li>
-                                <li class="stat-divider">
-                                    <span class="second-city">734,503 Р</span>
-                                    Вконтакте </li>
-                                <li>
-                                    <span class="third-city">734,503 Р</span>
-                                    i-Free </li>
-                                <li>
-                                    <span class="others-city">704,400 Р</span>
-                                    Остальные </li>
-                            </ul>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <div class="col-md-8">
-        <div class="panel-body">
-
-            <div class="event-calendar clearfix">
-                <div class="col-lg-7 calendar-block">
-                    <div class="cal1 ">
-                    </div>
-                </div>
-                <div class="col-lg-5 event-list-block">
-                    <div class="cal-day">
-                        <span>11 июля</span>
-                        Понедельник
-                    </div>
-                    <ul class="event-list">
-                        <li>Суп с укропом</li>
-                        <li>Макароны с сосисками</li>
-                        <li>Томатный сок</li>
-                        <li>Пирожное Буше</li>
-
-                    </ul>
-                    
-                </div>
-            </div>
-            
-        </div>
-        
-    </div>
-
-
-    <div class="col-md-4">
-        <!--chat start-->
-        <div class="panel-body">
-
-        <section class="panel">
-            <header class="panel-heading">
-                Чат 
-            </header>
-            <div class="panel-body">
-                <div class="chat-conversation">
-                    <ul class="conversation-list">
-                        <li class="clearfix odd">
-                            <div class="chat-avatar">
-                                <img src="images/placeholder.png" alt="male">
-                                <i>10:00</i>
-                            </div>
-                            <div class="conversation-text ">
-                                <div class="ctext-wrap">
-                                    <i>наЛанч-дроид</i>
-                                    <p>
-                                        Скоро мы сделаем здесь чат, чтобы вы могли быстро задавать важные вопросы
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-                        
-                    </ul>
-                    <div class="row">
-                        <div class="col-xs-8">
-                            <input type="text" class="form-control chat-input" placeholder="Ввод">
-                        </div>
-                        <div class="col-xs-4 chat-send">
-                            <button type="submit" class="btn btn-default">Отправить</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-            
-        </div>
-        
-        <!--chat end-->
-    </div>
-</div>
 <!--mini statistics start-->
 
 <!--mini statistics end-->
@@ -611,6 +395,12 @@
 <!--script for this page-->
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.0.2/jquery.simpleWeather.min.js"></script>
 
+<script>
+  window.intercomSettings = {
+    app_id: "b2u4y5cb"
+  };
+</script>
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/b2u4y5cb';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
 
 </body>
 </html>

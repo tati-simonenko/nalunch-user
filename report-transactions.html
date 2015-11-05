@@ -8,7 +8,7 @@
     <meta name="author" content="ThemeBucket">
     <link rel="shortcut icon" href="images/favicon.png">
 
-    <title>наЛанч: Транзакции</title>
+    <title>наЛанч: Отчет по транзакциям</title>
     <!--Core CSS -->
     <link href="bs3/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-reset.css" rel="stylesheet">
@@ -47,119 +47,49 @@
 </head>
 
 <body>
-
-<section id="container" >
+<section id="container">
 <!--header start-->
 <header class="header fixed-top clearfix">
 <!--logo start-->
 <div class="brand">
 
-    <a href="index-restaurant.html" class="logo">
+    <a href="index-user.html" class="logo">
         <!-- <img src="images/logo-header.png" alt=""> -->
         <h1 class="logo--head">наЛанч</h1>
-        <h2 class="logo--subhead">hello, ресторан!</h2>
+        <h2 class="logo--subhead">hello, организан!</h2>
     </a>
-    <div class="sidebar-toggle-box">
-        <div class="fa fa-bars"></div>
-    </div>
+    
 </div>
 <!--logo end-->
+
 <div class="nav notify-row" id="top_menu">
     <!--  notification start -->
-    <ul class="nav top-menu">
 
-        <!-- inbox dropdown start-->
-        <li id="header_inbox_bar" class="dropdown">
-            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                <i class="fa fa-envelope-o"></i>
-                <span class="badge bg-success">4</span>
-            </a>
-            <ul class="dropdown-menu extended inbox">
-                <li>
-                    <p class="red">У вас 4 новых заказа</p>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="photo"><img class="message-avatar"></span>
-                                <span class="subject">
-                                <span class="from">i-Free: 22.06-29.06</span>
-                                <span class="time">Только что</span>
-                                </span>
-                                <span class="message">
-                                    6 заказов, 13 008 рублей.
-                                </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="photo"><img class="message-avatar"></span>
-                                <span class="subject">
-                                <span class="from">i-Free: 22.06-29.06</span>
-                                <span class="time">12 часов назад</span>
-                                </span>
-                                <span class="message">
-                                    6 заказов, 13 008 рублей.
-                                </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="photo"><img class="message-avatar"></span>
-                                <span class="subject">
-                                <span class="from">i-Free: 22.06-29.06</span>
-                                <span class="time">2 дня назад</span>
-                                </span>
-                                <span class="message">
-                                    6 заказов, 13 008 рублей.
-                                </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="photo"><img class="message-avatar"></span>
-                                <span class="subject">
-                                <span class="from">i-Free: 22.06-29.06</span>
-                                <span class="time">Неделя назад</span>
-                                </span>
-                                <span class="message">
-                                    6 заказов, 13 008 рублей.
-                                </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="order.html">Посмотреть все заказы</a>
-                </li>
-            </ul>
-        </li>
-        <!-- inbox dropdown end -->
-        <!-- notification dropdown start-->
-        <li id="header_notification_bar" class="dropdown">
-            <div class="toggle-right-box nl-toggle-messages">
-                <div class="fa fa-bars"></div>
-                <span class="badge bg-important">3</span>
-            </div>
-        </li>
-        
-        <!-- notification dropdown end -->
-    </ul>
+    <div class="nl-select-group">
+        <select id="e1" class="nl-select nl-select-basic">
+            <option >Организация</option>
+            <option value="">i-Free&nbsp;</option>
+            <option value="">i-Free the greatest&nbsp;</option>
+        </select>
+    </div>
+    
     <!--  notification end -->
 </div>
 <div class="top-nav clearfix">
     <!--search & user info start-->
     <ul class="nav pull-right top-menu">
-        <li>
-            <input type="text" class="form-control search" placeholder=" Поиск">
-        </li>
+
+        
         <!-- user login dropdown start-->
         <li class="dropdown">
             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                 <img alt="" src="images/placeholder.png">
-                <span class="username">Имя ресторана</span>
+                <span class="username">Имя организации</span>
                 <b class="caret"></b>
             </a>
             <ul class="dropdown-menu extended logout">
-                <li><a href="profile-restaurant.html"><i class=" fa fa-suitcase"></i>Профиль</a></li>
-                <li><a href="index-restaurant.html"><i class="fa fa-key"></i>Выйти из профиля</a></li>
+                <li><a href="profile-org.html"><i class=" fa fa-suitcase"></i>Профиль</a></li>
+                <li><a href="index-org.html"><i class="fa fa-key"></i>Выйти из профиля</a></li>
             </ul>
         </li>
         <!-- user login dropdown end -->
@@ -174,52 +104,53 @@
         <!-- sidebar menu start-->
         <div class="leftside-navigation">
             <ul class="sidebar-menu" id="nav-accordion">
-                <li>
-                    <a href="index-restaurant.html">
+                <li> 
+                    <a href="index-org.html" class="">
                         <i class="fa fa-dashboard"></i>
                         <span>Рабочий стол</span>
                     </a>
                 </li>
 
+                <li> 
+                    <a href="member-list.html" class="">
+                        <i class="fa fa-male"></i>
+                        <span>Список сотрудников</span>
+                    </a>
+                </li>
+
                 <li>
-                    <a class="active sub-menu">
+                    <a class="sub-menu active">
                         <i class="fa fa-rouble"></i>
-                        <span>Транзакции</span>
+                        <span>Отчеты</span>
                     </a>
                     <ul class="sub">
-                        <li class="active" ><a href="transactions.html">Детальный отчет</a></li>
-                        <li><a href="transactions-places.html">Отчет по ресторанам</a></li>
+                        <li class="active"><a href="report-transactions.html">По транзакциям</a></li>
+                        <li><a href="report-restaurants.html">По ресторанам</a></li>
+                        <li><a href="report-people.html">По сотрудникам</a></li>
+                        
                     </ul>
                 </li>
 
                 <li>
-                    <a href="loyality.html">
-                        <i class="fa fa-star"></i>
-                        <span>Лояльность</span>
-                    </a>
-                </li>
-
-                <li class="sub-menu">
-                    <a href="index-restaurant.html">
-                        <i class="fa fa-truck"></i>
+                    <a class="sub-menu " >
+                        <i class="fa fa-rouble"></i>
                         <span>Доставка</span>
                     </a>
                     <ul class="sub">
-                        <li><a href="order.html">Заказы</a></li>
-                        <li><a href="clients.html">Клиенты</a></li>
-                        <li><a href="menu.html">Меню</a></li>
-                        <li><a href="dishes.html">Блюда</a></li>
+                        <li><a href="make-order--o.html">Сделать заказ</a></li>
+                        <li><a href="order-history--o.html">Заказы</a></li>
                     </ul>
                 </li>
 
                <li>
-                    <a href="profile-restaurant.html">
+                    <a href="profile-org.html">
                         <i class="fa fa-user"></i>
                         <span>Профиль</span>
                     </a>
                 </li>
                 
-            </ul>            </div>
+            </ul>            
+        </div>
         <!-- sidebar menu end-->
     </div>
 </aside>
@@ -258,10 +189,10 @@
                                 
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-xs-12">
 
-                                 <div class="nl-select-group">
+                        <div class="nl-filter-row">
+                            <div class="form-group">
+                                <div class="nl-select-group">
                                     <select id="e1" class="nl-select nl-select-basic">
                                         <option >Показать все заведения</option>
                                         <option value="">"Pizza Ollis", Кронверкский пр. д. 61/28&nbsp;</option>
@@ -271,7 +202,7 @@
                                 </div>
                                 <div class="nl-select-group">
                                     <select id="e2" class="nl-select nl-select-basic">
-                                        <option >Показать всех клиентов</option>
+                                        <option >Организация</option>
                                         <option value="">i-Free&nbsp;</option>
                                         <option value="">Вконтакте&nbsp;</option>
                                         <option value="">i-Free&nbsp;</option>
@@ -284,10 +215,30 @@
                                         <option value="">Только ошибочные</option>
                                     </select>
                                 </div>
-                                
                             </div>
                         </div>
-                        <div class="row">&nbsp;</div>
+
+                        <div class="nl-filter-row">
+                            <div class="form-group">
+                                <div class="nl-select-group">
+                                    <select id="e1" class="nl-select nl-select-basic">
+                                        <option >Номер карты</option>
+                                        <option value="">3746731467146&nbsp;</option>
+                                        <option value="">7236483745687&nbsp;</option>
+                                        <option value="">2379465734867&nbsp;</option>
+                                    </select>
+                                </div>
+                                <div class="nl-select-group">
+                                    <select id="e2" class="nl-select nl-select-basic">
+                                        <option >Имя сотрудника</option>
+                                        <option value="">Лора Палмер&nbsp;</option>
+                                        <option value="">Пирс Броснан&nbsp;</option>
+                                        <option value="">Афанасий Никитин&nbsp;</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
 
                         <div class="row">
                             <div class="col-xs-12">
@@ -304,7 +255,7 @@
             <div class="col-sm-12">
                 <section class="panel">
                     <header class="panel-heading">
-                        ТРАНЗАКЦИИ: ДЕТАЛЬНЫЙ ОТЧЕТ
+                        ДЕТАЛЬНЫЙ ОТЧЕТ ПО ТРАНЗАКЦИЯМ
                         <span class="tools pull-right">
                             <a class="fa fa-chevron-down"></a>
                          </span>
@@ -313,15 +264,8 @@
 
                     <div class="adv-table">
                         <div class="row">
-                            <div class="col-xs-6">
+                            <div class="col-xs-10">
                                     
-                            </div>
-                            <div class="col-xs-4">
-                                <div class="dataTables_filter nl-dataTables_filter">
-                                    <label for="">
-                                        Поиск <input type="text" class="form-control" aria-controls="dynamic-table">
-                                    </label>
-                                </div>
                             </div>
                             
                             <div class="col-xs-2 align-right nl-dishes-search__tools">
@@ -337,169 +281,57 @@
                     <table  class="display table table-bordered table-striped">
                         <thead>
                             <tr>
-                                <th>Точка питания</th>
+                                <th>Заведения</th>
                                 <th>Номер карты</th>
+                                <th>Сотрудник</th>
                                 <th>Сумма</th>
+                                <th>Перерасход</th>
                                 <th>Дата и время</th>
-                                <th>Тип</th>
                             </tr>
                         </thead>
                         <tbody>
                                 <tr class="">
                                     <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
                                     <td>2830202731 (A8B1776B)</td>
-                                    <td>1,00р.</td>
+                                    <td>Такааки Кадзита</td>
+                                    <td>280,00&nbsp;₽</td>
+                                    <td>0,00&nbsp;₽</td>
                                     <td>05.06.2015 18:51:47</td>
-                                    <td>Меню</td>
-                                </tr>
-                                <tr class="">
-                                    <td>"Mama Roma", Средний проспект В.О., 6</td>
-                                    <td>2830202731 (A8B1696B)</td>
-                                    <td>12,00р.</td>
-                                    <td>05.07.2015 18:51:47</td>
-                                    <td>Меню</td>
-                                </tr>
-                                <tr class="">
-                                    <td>"Mama Roma", пр-кт Большой, 70</td>
-                                    <td>2830202731 (A8B11160)</td>
-                                    <td>100,00р.</td>
-                                    <td>15.06.2015 18:51:47</td>
-                                    <td>Меню</td>
                                 </tr>
                                 <tr class="">
                                     <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
                                     <td>2830202731 (A8B1776B)</td>
-                                    <td>1,00р.</td>
-                                    <td>05.06.2015 18:51:47</td>
-                                    <td>Меню</td>
+                                    <td>Артур Макдоналд</td>
+                                    <td>280,00&nbsp;₽</td>
+                                    <td>0,00&nbsp;₽</td>
+                                    <td>05.06.2015 18:52:15</td>
                                 </tr>
                                 <tr class="">
-                                    <td>"Mama Roma", Средний проспект В.О., 6</td>
-                                    <td>2830202731 (A8B1696B)</td>
-                                    <td>12,00р.</td>
-                                    <td>05.07.2015 18:51:47</td>
-                                    <td>Меню</td>
-                                </tr>
-                                <tr class="">
-                                    <td>"Mama Roma", пр-кт Большой, 70</td>
-                                    <td>2830202731 (A8B11160)</td>
-                                    <td>100,00р.</td>
-                                    <td>15.06.2015 18:51:47</td>
-                                    <td>Меню</td>
-                                </tr>
-                                <tr class="">
-                                    <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
+                                    <td>"Mama Roma", Чкаловский, 15</td>
                                     <td>2830202731 (A8B1776B)</td>
-                                    <td>1,00р.</td>
-                                    <td>05.06.2015 18:51:47</td>
-                                    <td>Меню</td>
+                                    <td>Сара Даниус</td>
+                                    <td>350,00&nbsp;₽</td>
+                                    <td>80,00&nbsp;₽</td>
+                                    <td>08.06.2015 18:52:15</td>
                                 </tr>
                                 <tr class="">
-                                    <td>"Mama Roma", Средний проспект В.О., 6</td>
-                                    <td>2830202731 (A8B1696B)</td>
-                                    <td>12,00р.</td>
-                                    <td>05.07.2015 18:51:47</td>
-                                    <td>Меню</td>
-                                </tr>
-                                <tr class="">
-                                    <td>"Mama Roma", пр-кт Большой, 70</td>
-                                    <td>2830202731 (A8B11160)</td>
-                                    <td>100,00р.</td>
-                                    <td>15.06.2015 18:51:47</td>
-                                    <td>Меню</td>
-                                </tr>
-                                <tr class="">
-                                    <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
+                                    <td>"Mama Roma", Чкаловский, 15</td>
                                     <td>2830202731 (A8B1776B)</td>
-                                    <td>1,00р.</td>
-                                    <td>05.06.2015 18:51:47</td>
-                                    <td>Меню</td>
+                                    <td>Светлана Алексиевич</td>
+                                    <td>350,00&nbsp;₽</td>
+                                    <td>80,00&nbsp;₽</td>
+                                    <td>08.06.2015 18:52:15</td>
                                 </tr>
-                                <tr class="">
-                                    <td>"Mama Roma", Средний проспект В.О., 6</td>
-                                    <td>2830202731 (A8B1696B)</td>
-                                    <td>12,00р.</td>
-                                    <td>05.07.2015 18:51:47</td>
-                                    <td>Меню</td>
-                                </tr>
-                                <tr class="">
-                                    <td>"Mama Roma", пр-кт Большой, 70</td>
-                                    <td>2830202731 (A8B11160)</td>
-                                    <td>100,00р.</td>
-                                    <td>15.06.2015 18:51:47</td>
-                                    <td>Меню</td>
-                                </tr>
-                                <tr class="">
-                                    <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
-                                    <td>2830202731 (A8B1776B)</td>
-                                    <td>1,00р.</td>
-                                    <td>05.06.2015 18:51:47</td>
-                                    <td>Меню</td>
-                                </tr>
-                                <tr class="">
-                                    <td>"Mama Roma", Средний проспект В.О., 6</td>
-                                    <td>2830202731 (A8B1696B)</td>
-                                    <td>12,00р.</td>
-                                    <td>05.07.2015 18:51:47</td>
-                                    <td>Меню</td>
-                                </tr>
-                                <tr class="">
-                                    <td>"Mama Roma", пр-кт Большой, 70</td>
-                                    <td>2830202731 (A8B11160)</td>
-                                    <td>100,00р.</td>
-                                    <td>15.06.2015 18:51:47</td>
-                                    <td>Меню</td>
-                                </tr>
-                                <tr class="">
-                                    <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
-                                    <td>2830202731 (A8B1776B)</td>
-                                    <td>1,00р.</td>
-                                    <td>05.06.2015 18:51:47</td>
-                                    <td>Меню</td>
-                                </tr>
-                                <tr class="">
-                                    <td>"Mama Roma", Средний проспект В.О., 6</td>
-                                    <td>2830202731 (A8B1696B)</td>
-                                    <td>12,00р.</td>
-                                    <td>05.07.2015 18:51:47</td>
-                                    <td>Меню</td>
-                                </tr>
-                                <tr class="">
-                                    <td>"Mama Roma", пр-кт Большой, 70</td>
-                                    <td>2830202731 (A8B11160)</td>
-                                    <td>100,00р.</td>
-                                    <td>15.06.2015 18:51:47</td>
-                                    <td>Меню</td>
-                                </tr>
-                                <tr class="">
-                                    <td>"Pizza Ollis", Кронверкский пр. д. 61/28</td>
-                                    <td>2830202731 (A8B1776B)</td>
-                                    <td>1,00р.</td>
-                                    <td>05.06.2015 18:51:47</td>
-                                    <td>Меню</td>
-                                </tr>
-                                <tr class="">
-                                    <td>"Mama Roma", Средний проспект В.О., 6</td>
-                                    <td>2830202731 (A8B1696B)</td>
-                                    <td>12,00р.</td>
-                                    <td>05.07.2015 18:51:47</td>
-                                    <td>Меню</td>
-                                </tr>
-                                <tr class="">
-                                    <td>"Mama Roma", пр-кт Большой, 70</td>
-                                    <td>2830202731 (A8B11160)</td>
-                                    <td>100,00р.</td>
-                                    <td>15.06.2015 18:51:47</td>
-                                    <td>Меню</td>
-                                </tr>
+                                
                         </tbody>
                         <tfoot>
                             <tr>
-                                <th>Точка питания</th>
+                                <th>Заведения</th>
                                 <th>Номер карты</th>
+                                <th>Сотрудник</th>
                                 <th>Сумма</th>
+                                <th>Перерасход</th>
                                 <th>Дата и время</th>
-                                <th>Тип</th>
                             </tr>
                         </tfoot>
                     </table>

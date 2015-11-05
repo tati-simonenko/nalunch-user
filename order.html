@@ -13,7 +13,7 @@
     <link href="bs3/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-reset.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
-
+    <link rel="stylesheet" href="css/bootstrap-switch.css" />
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style-responsive.css" rel="stylesheet" />
@@ -23,6 +23,9 @@
     <link rel="stylesheet" type="text/css" href="js/bootstrap-daterangepicker/daterangepicker-bs3.css" />
     <link rel="stylesheet" type="text/css" href="js/bootstrap-datetimepicker/css/datetimepicker.css" />
 
+
+    <link rel="stylesheet" type="text/css" href="js/jquery-multi-select/css/multi-select.css" />
+    <link rel="stylesheet" type="text/css" href="js/jquery-tags-input/jquery.tagsinput.css" />
      <!--dynamic table-->
     <link href="js/advanced-datatable/css/demo_page.css" rel="stylesheet" />
     <link href="js/advanced-datatable/css/demo_table.css" rel="stylesheet" />
@@ -241,6 +244,11 @@
                             <li class="nl-tabs--blue__item">
                                 <a data-toggle="tab" href="#archive">
                                     Архив заказов
+                                </a>
+                            </li>
+                            <li class="nl-tabs--blue__item">
+                                <a data-toggle="tab" href="#pre-order">
+                                    Предзаказ
                                 </a>
                             </li>
                             
@@ -596,12 +604,24 @@
                                                             </div>
                                                         </div>
                                                     </div>
+
                                                     <div class="nl-filter-place">
                                                         <div class="dataTables_filter nl-archive-dataTables_filter">
                                                             <label for="">
                                                                 Поиск <input type="text" class="form-control" aria-controls="dynamic-table">
                                                             </label>
                                                         </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="nl-filter-row">
+                                                    <div class="nl-select-group">
+                                                        <select id="e1" class="nl-select nl-select-basic">
+                                                            <option >Показать все организации</option>
+                                                            <option value="">i-Free</option>
+                                                            <option value="">Вконтакте</option>
+                                                            <option value="">i-Free</option>
+                                                        </select>
                                                     </div>
                                                 </div>
                                                 <div class="row">
@@ -1200,6 +1220,59 @@
 
 
                             </div>
+
+                            <!-- третий таю -->
+
+                            <div id="pre-order" class="tab-pane">
+
+                                <secrion class="panel">
+
+                                    <div class="panel-body">
+
+                                        <table class="table table-invoice table-pre-order" >
+                                            <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th class="text-center">Название блюда</th>
+                                                <th class="text-center">Цена</th>
+                                                <th class="text-center">Кол-во</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>По всем организациям</td>
+                                                <td>
+                                                    <h5>Суп грибной</h5>
+                                                </td>
+                                                <td class="text-center">50,00&nbsp;₽.</td>
+                                                <td class="text-center">15</td>
+                                            </tr>
+                                            <tr class="nl-alert-warning">
+                                                <td>2</td>
+                                                <td>
+                                                    <h5>Вторник 21 апреля</h5>
+                                                    <p class="nl-alert-warning"><strong>Корректировка заказа</strong></p>
+                                                </td>
+                                                <td class="text-center">13 чел.</td>
+                                                <td class="text-center">2 014,00 <i class="fa fa-rub"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>
+                                                    <h5>Воскресенье 27 апреля</h5>
+                                                </td>
+                                                <td class="text-center">0 чел.</td>
+                                                <td class="text-center">0,00 <i class="fa fa-rub"></i></td>
+                                            </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </secrion>
+
+                                        
+                                
+                            </div>
                             
                         </div>
                     </div>
@@ -1388,14 +1461,21 @@
 <script src="js/flot-chart/jquery.flot.resize.js"></script>
 <script src="js/flot-chart/jquery.flot.pie.resize.js"></script>
 
+<script src="js/jquery-tags-input/jquery.tagsinput.js"></script>
+<script src="js/bootstrap-switch.js"></script>
 <script src="js/advanced-form.js"></script>
 
 <script type="text/javascript" src="js/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
 <script type="text/javascript" src="js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
 <script type="text/javascript" src="js/bootstrap-daterangepicker/moment.min.js"></script>
 <script type="text/javascript" src="js/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+<script type="text/javascript" src="js/jquery-multi-select/js/jquery.multi-select.js"></script>
 <!--common script init for all pages-->
 <script src="js/scripts.js"></script>
+
+
+
 
 </body>
 </html>
