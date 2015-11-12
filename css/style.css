@@ -5947,6 +5947,10 @@ input:focus { border: 1px solid #F99A00!important; }
     border-color: #ef9d26;
     color: #fff;
 }
+.link-nalunch,
+.link-nalunch:hover {
+    color: #ef9d26;
+}
 .btn-nalunch:hover {
     color: #fff;
     background-color: #ee9616;
