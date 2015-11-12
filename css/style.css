@@ -6514,6 +6514,59 @@ p.nl-places-select__title { margin-bottom: 10px; }
     margin-bottom: 10px;
 }
 
+/*new orser page for restaurant*/
+
+.table-info {
+    margin-bottom: 20px;
+}
+.table-info .table-info__item:nth-child(1) {
+    font-weight: bold;
+}
+.table-info__row,
+.table-info__detailed-head,
+.table-info__detailed-body {
+    font-size: 0;
+}
+.table-info__column {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    padding: 10px;
+    font-size: 13px;
+}
+.table-info__detailed {
+    background-color: rgba(241, 242, 247, 0.12);
+    position: relative;
+}
+.table-info__detailed--close {
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 5px 0;
+    opacity: 0.5;
+}
+.table-info__detailed-head .table-info__column {
+    padding-bottom: 5px;
+} 
+.table-info__detailed-body .table-info__column {
+    padding: 5px 10px;
+}
+.table-info__detailed.hide {
+    display: none;
+}
+.table-info__detailed-head {
+    font-weight: bold;
+}
+.table-info__column--link {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.table-info__column .dropdown-toggle {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 /*clients*/
 
 .clients-by-company .nl-dataTables_filter input {
